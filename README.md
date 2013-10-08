@@ -12,5 +12,6 @@ contains source code for www.uxisready.com
   - testing remote edit with daemon monitoring the webhook
 
 - remember to setup the remote alias as github
+- text text text
 
 

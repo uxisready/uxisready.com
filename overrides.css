@@ -127,6 +127,14 @@
         .footer-links {
             font-size: 12px;
         }
+        
         body {
             xpadding:0;
         }
+        .customerbox {
+            background: red;
+            height: 300px;
+        }
+        
+        
+        

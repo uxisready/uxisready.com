@@ -48,7 +48,7 @@
                 -moz-background-size: cover;
                 -webkit-background-size: cover;
                 -o-background-size: cover;
-            padding:10% 0;
+            padding:2% 0;
         }
 
         .bigpanel h1,  .bigpanel h3 {
@@ -100,7 +100,7 @@
 
         .contactbox {
             width: 100%;
-            background: url('images/map_opacity_20.png') no-repeat;
+            /*background: url('images/map_opacity_20.png') no-repeat;*/
 
             background-size: cover;
                 -moz-background-size: cover;
@@ -122,6 +122,7 @@
             padding: 2% 0 2% 0;
             background: url('images/underline_1.png') no-repeat;
             background-position: center 95%;
+            color:orange;
         }
 
         .footer-links {
@@ -134,6 +135,12 @@
         .customerbox {
             height: 350px;
         }
-        
-        
-        
+        #processSwitch {
+           color:blue;
+        }
+        .hideMe {
+        display:none;
+        }
+        .greybox {
+            background: #eee;
+        }

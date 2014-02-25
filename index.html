@@ -80,39 +80,60 @@
 
 <div class="container row-fluid">
     <div class="span1"></div>
-    <div class="marketing span5">
+    <div class="marketing span10">
         <p class='panelText'>
-            We are a User Experience (UX) agency that specializes in baking
-            emotionally engaging experiences. Our skilled multi-cultural team
-            loves getting to know your users to understand their unique
-            motivations, expectations and behaviors. This knowledge is then
-            shaped into intuitive and engaging experience design.
+            We are a User Experience (UX) agency that specializes in creating
+            and improving digital products and services for al ltypes of organizations.
+            Our skilled multi-cultural team loves getting to know your business and 
+            understanding the unique  motivations, goals and expectations of your customers. 
+            This knowledge is then shaped into intuitive and engaging experience design.
         </p>
         <p class='panelText'>
-            We enjoy working with all type of companies and organisations:
-            start-ups, global corporations, advertising agencies, non-profits,
-            and everything in between.
-        </p>
-        <p class='panelText'>
-            We work with clients worldwide. In English, French, Italian
-            and Spanish. 
+            We work with clients worldwide. In English, French, Italian and Spanish. 
         </p>
     </div>
     <div class="span1"></div>
-    <div class="marketing span5">
-        <p class='panelText'>Our services include:</p>
-        <ul class="list">
-            <li><p class='panelText'>Customer or end-user research</p></li>
-            <li><p class='panelText'>Design collaboration workshops</p></li>
-            <li><p class='panelText'>Interaction design and wireframe development</p></li>
-            <li><p class='panelText'>Lean UX for start-ups</p></li>
-            <li><p class='panelText'>Personas and user scenarios</p></li>
-            <li><p class='panelText'>Proof of concept prototyping</p></li>
-            <li><p class='panelText'>Usability evaluation of your products or services</p></li>
-            <li><p class='panelText'>User testing and analysis</p></li>
-        </ul>
-    </div>
+</div>
+
+<div class="container row-fluid">
+<p>
     <div class="span1"></div>
+    <div class="span3">
+        <center><img class='circle-icon' src='assets/icon_1.png'/></center>
+        <p class='panelText'>
+            We offer UX design services and applications on the web, tablet, phone and all other mobile devices.
+            We design the flow, and every screen of your product using our lean and agile UX process.
+            Your users will immediately be able to do what they need to when using your service or product.
+        </p>
+    </div>
+    <div class="span3">
+        <center><img class='circle-icon' src='assets/icon_2.png'/></center>
+        <p class='panelText'>
+        We measure how satisfied your customers are with your product or service.
+        We believe in testing at every stage in the process and have a wide variety of methods which we can utilize.
+        From learning by watching to analyzing the data of 100's of customers as they use your service.
+        
+        </p>
+    </div>
+    <div class="span3">
+        <center><img class='circle-icon' src='assets/icon_3.png'/></center>
+        <p class='panelText'>
+        Our training workshops are specifically tailored to each client.
+        From helping with a specific project or subject (UX agile, design collaboration, Lean UX) to streamlining the UX process within your company (UX agile, Interim UX lead)
+        </p>
+    </div>
+    </p>
+</div>
+
+<div class="container row-fluid">
+    <div class="container">
+        <div class="span1"></div>
+        <div class="span10 ">
+            <center class='greybox'><p id='processSwitch'>Our Process &#x25BC;</p></center>
+            <img id='processImage' class='hideMe' src="assets/uxisready_process_.png"/>
+        </div>
+        <div class="span1"></div>
+    </div>
 </div>
 
 <a name='customers'></a>
@@ -139,19 +160,8 @@
 <div class="row-fluid contactbox">
     <div class="container">
         <div class="span1"></div>
-        <div class="marketing span10">
-            <h2>Ready to talk about your next project?</h2>
-            <div class="row-fluid">
-                <div class="span3"></div>
-                <div class="span6">
-                    <div class='emailbox'>
-                         <a class="btn btn-large btn-primary btn-warning" href='mailto:hello%40uxisready.com?subject=Hello!'>
-                             Contact us
-                        </a>
-                    </div>
-                </div>
-                <div class="span3"></div>
-            </div>
+        <div class="marketing span10 greybox">
+            <h2>Ready to talk about your next project? <a class="btn btn-large btn-primary btn-warning" href='mailto:hello%40uxisready.com?subject=Hello!'>Contact us</a> </h2>
         </div>
         <div class="span1"></div>
     </div>
@@ -194,7 +204,10 @@
     <script src="bootstrap/js/holder/holder.js"></script>
 
 <script>
+$('#processSwitch').click(function(){
+   $('#processImage').toggle('slow');
 
+})
 </script>
     <!-- Analytics
     ================================================== -->

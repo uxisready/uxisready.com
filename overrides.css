@@ -51,7 +51,7 @@
             padding:2% 0;
         }
 
-        .bigpanel h1,  .bigpanel h3 {
+        .bigpanel h1 {
             text-shadow: 2px 8px 6px rgba(0,0,0,0.6), 0px -5px 35px rgba(255,255,255,0.8),
                         -0.01em 0.01em 0em #cc6633, -0.02em 0.02em 0em #e69064,
                         -0.03em 0.03em 0em #e6a787, -0.04em 0.04em 0em #853811;
@@ -66,6 +66,15 @@
 
         p.panelText .icon {
             margin-right: 10px;
+        }
+
+        .service-tiles .tile {
+           padding: 3%;
+        }
+
+        .service-tiles P.panelText {
+          text-align: left;
+          line-height: 1.8;
         }
 
         .logo {
@@ -83,7 +92,7 @@
         }
 
         .orange {
-            color: #cc6633;
+            color: #c66737;
         }
 
         .whitepage {
@@ -120,9 +129,9 @@
 
         .marketing h2 {
             padding: 2% 0 2% 0;
-            background: url('images/underline_1.png') no-repeat;
+          /*  background: url('images/underline_1.png') no-repeat; */
             background-position: center 95%;
-            color:orange;
+            color:#c66737;
         }
 
         .footer-links {
@@ -132,21 +141,25 @@
         body {
             xpadding:0;
         }
-        .customerbox {
-            height: 350px;
-        }
+
         #processSwitch {
            color:blue;
         }
+
         .hideMe {
-        display:none;
+          display:none;
         }
+
         .greybox {
-            background: #eee;
+            background: #e4e0dd;
+            padding: 1%;
         }
+
         h3 {
-          font-size: 12pt;
-          color: #888;
+          font-size: 14pt;
+          font-weight: 100;
+          color: #c66737;
+          background: rgba(255,255,255,0.7);
         }
 
       

@@ -147,12 +147,20 @@
         }
 
         .hideMe {
-          display:none;
+           display:none;
         }
 
         .greybox {
-            background: #e4e0dd;
-            padding: 1%;
+          background: #e4e0dd;
+          padding: 1%;
+        }
+
+        .greybox .btn {
+          margin-top: 1%; 
+        }
+        
+        .greybox h2 {
+          padding: 0%;
         }
 
         h3 {
@@ -161,5 +169,4 @@
           color: #c66737;
           background: rgba(255,255,255,0.7);
         }
-
       

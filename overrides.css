@@ -1,181 +1,202 @@
-            /* CUSTOMIZE THE NAVBAR
-    -------------------------------------------------- */
+.navbar-wrapper
+{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  z-index:10;
+  margin-top:20px;
+  margin-bottom:-90px;
+}
 
-    /* Special class on .container surrounding .navbar, used for positioning it into place. */
-    .navbar-wrapper {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 10;
-      margin-top: 20px;
-      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
-    }
-    .navbar-wrapper .navbar {
+.navbar .navbar-inner
+{
+  border:0;
+  -webkit-box-shadow:0 2px 10px rgba(0,0,0,.25);
+  -moz-box-shadow:0 2px 10px rgba(0,0,0,.25);
+  box-shadow:0 2px 10px rgba(0,0,0,.25);
+  min-height:57px;
+}
 
-    }
+.navbar .brand
+{
+  font-size:16px;
+  font-weight:700;
+  text-shadow:0 -1px 0 rgba(0,0,0,.5);
+  padding:14px 20px 16px;
+}
 
-    /* Remove border and change up box shadow for more contrast */
-    .navbar .navbar-inner {
-      border: 0;
-      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-              box-shadow: 0 2px 10px rgba(0,0,0,.25);
-    }
+ul.nav
+{
+  padding:12px;
+}
 
-    /* Downsize the brand/project name a bit */
-    .navbar .brand {
-      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
-      font-size: 16px;
-      font-weight: bold;
-      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
-    }
+.navbar .nav > li
+{
+  height:25px;
+}
 
-    /* Navbar links: increase padding for taller navbar 
-    .navbar .nav > li > a {
-      padding: 15px 20px;
-    }
-    */
+.navbar .btn-navbar
+{
+  margin-top:10px;
+}
 
-    /* Offset the responsive button for proper vertical alignment */
-    .navbar .btn-navbar {
-      margin-top: 10px;
-    }
+.jumbotron
+{
+  background:url(images/bgbig.jpg) no-repeat center center fixed;
+  background-size:cover;
+  -moz-background-size:cover;
+  -webkit-background-size:cover;
+  -o-background-size:cover;
+  padding:2% 0;
+}
 
+.bigpanel h1,.bigpanel h3
+{
+  text-shadow:2px 8px 6px rgba(0,0,0,0.6), 0 -5px 35px rgba(255,255,255,0.8), -.01em .01em 0 #cc6633, -.02em .02em 0 #e69064, -.03em .03em 0 #e6a787, -.04em .04em 0 #853811;
+}
 
-        .jumbotron {
-            background: url('images/bgbig.jpg') no-repeat center center fixed;
-            background-size: cover;
-                -moz-background-size: cover;
-                -webkit-background-size: cover;
-                -o-background-size: cover;
-            padding:2% 0;
-        }
+p.panelText
+{
+  text-align:left;
+  line-height:1.5;
+  padding:2px;
+}
 
-        .bigpanel h1,  .bigpanel h3 {
-            text-shadow: 2px 8px 6px rgba(0,0,0,0.6), 0px -5px 35px rgba(255,255,255,0.8),
-                        -0.01em 0.01em 0em #cc6633, -0.02em 0.02em 0em #e69064,
-                        -0.03em 0.03em 0em #e6a787, -0.04em 0.04em 0em #853811;
+p.panelText .icon
+{
+  margin-right:10px;
+}
 
-        }
+.service-tiles .tile
+{
+  padding:3%;
+}
 
-        p.panelText {
-            padding: 2px;
-            text-align: left;
-            line-height: 1.5;
-        }
+.service-tiles P.panelText
+{
+  text-align:left;
+  line-height:1.8;
+}
 
-        p.panelText .icon {
-            margin-right: 10px;
-        }
+.service-tiles h3
+{
+  font-size:14pt;
+  font-weight:100;
+  color:#c66737;
+  background:rgba(255,255,255,0.7);
+}
 
-        .service-tiles .tile {
-           padding: 3%;
-        }
+.logo
+{
+  margin-bottom:-32px;
+  z-index:1000;
+  background:#FFF;
+}
 
-        .service-tiles P.panelText {
-          text-align: left;
-          line-height: 1.8;
-        }
+nav.uxisready
+{
+  margin-left:64px;
+}
 
-        .service-tiles h3 {
-          font-size: 14pt;
-          font-weight: 100;
-          color: #c66737;
-          background: rgba(255,255,255,0.7);
-        }
-      
+span.spacer
+{
+  padding:0 20px;
+}
 
-        .logo {
-            margin-bottom: -32px;
-            z-index:1000;
-            background:white;
-        }
+.orange
+{
+  color:#c66737;
+}
 
-        nav.uxisready {
-            margin-left: 64px;
-        }
+.whitepage
+{
+  background:#FFF;
+}
 
-        span.spacer {
-            padding: 0 20px;
-        }
+.marketing h1
+{
+  margin:10px 0;
+}
 
-        .orange {
-            color: #c66737;
-        }
+.emailbox
+{
+  padding:10%;
+}
 
-        .whitepage {
-            background: white;
-        }
+.contactbox
+{
+  width:100%;
+  background:url(images/map_opacity_20.png) no-repeat;
+  background-size:cover;
+  -moz-background-size:cover;
+  -webkit-background-size:cover;
+  -o-background-size:cover;
+}
 
-        .marketing h1 {
-            margin: 10px 0 10px;
-        }
+.uppershadow
+{
+  width:100%;
+  border-top:1px rgba(201,96,51,1);
+}
 
-        .emailbox {
-            padding: 10%;
-        }
+.footer
+{
+  margin-top:0;
+  padding:0;
+}
 
-        .contactbox {
-            width: 100%;
-            /*background: url('images/map_opacity_20.png') no-repeat;*/
+.marketing h2
+{
+  background-position:center 95%;
+  color:#c66737;
+  padding:1% 0;
+}
 
-            background-size: cover;
-                -moz-background-size: cover;
-                -webkit-background-size: cover;
-                -o-background-size: cover;
-        }
+.footer-links
+{
+  font-size:12px;
+}
 
-        .uppershadow {
-            width: 100%;
-            border-top: 1px rgba(201,96,51,1);
-        }
+#processSwitch
+{
+  color:#08c;
+  margin:0;
+}
 
-        .footer {
-            margin-top: 0;
-            padding:0;
-        }
+.hideMe
+{
+  display:none;
+}
 
-        .marketing h2 {
-            padding: 1% 0 1% 0;
-          /*  background: url('images/underline_1.png') no-repeat; */
-            background-position: center 95%;
-            color:#c66737;
-        }
+.greybox
+{
+  background:#f4f4f4;
+  padding:1%;
+}
 
-        .footer-links {
-            font-size: 12px;
-        }
+.greybox .btn
+{
+  margin-top:1%;
+}
 
-        #processSwitch {
-           color:#008dda;
-           margin:0px;
-        }
+.greybox h2
+{
+  padding:1%;
+}
 
-        .hideMe {
-           display:none;
-        }
+h2
+{
+  font-size:24px;
+}
 
-        .greybox {
-          background: #e4e0dd;
-          padding: 1%;
-        }
+p
+{
+  font-family:'Fjord One';
+  color:#5a5a5a;
+  font-size:16px;
+}
 
-        .greybox .btn {
-          margin-top: 1%; 
-        }
-        
-        .greybox h2 {
-          padding: 1%;
-        }
-
-        h2 {
-          font-size: 24px;
-        }
-
-       p {
-        font-family:'Fjord One';
-        color:#5a5a5a;
-        font-size:16px;
-       }
-    
+.footer {
+  border:none;
+}

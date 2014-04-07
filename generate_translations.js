@@ -63,7 +63,8 @@ var request = https.request(options, function (res) {
 			for (var target_language in headers) {
 				var copydata = data;
 				
-				var indexFile = "index." + headers[target_language] + ".html";
+				var indexFile = ("index." + headers[target_language] + ".html").replace(".en","");
+                
 				console.log("generating " + indexFile);
 				for (var key in translations) {
 					var re = new RegExp("##"+key+"##", "g");

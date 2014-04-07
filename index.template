@@ -8,10 +8,10 @@
         }
     </script>
     <meta charset="utf-8">
-    <title>Experiencia de usuario – Optimizamos tu sitio web y la satisfacción de tus clientes.</title>
+    <title>##1000##</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="UX is ready te ayuda a optimizar tu sitio web, alcanzar tus objetivos de negocio y mejorar la satisfacción de tus clientes.">
-    <meta name="author" content="UX is ready">
+    <meta name="description" content="##1001##">
+    <meta name="author" content="##1002##">
 
     <!-- Le styles -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -51,13 +51,13 @@
         <div class="nav-collapse collapse">
             <ul class="nav uxisready">
                 <li>
-                    <a href="#whatwedo">¿Qué hacemos?</a>
+                    <a href="#whatwedo">##1003##</a>
                 </li>
                 <li>
-                    <a href="#customers">Clientela</a>
+                    <a href="#customers">##1004##</a>
                 </li>
                 <li>
-                    <a href="#contactus">Contáctenos</a>
+                    <a href="#contactus">##1005##</a>
                 </li>
             </ul>
         </div>
@@ -67,15 +67,15 @@
 <a name='top'></a>
 <div class="jumbotron bigpanel">
     <div class="container fixed">
-        <h1>Moldeamos experiencias increíbles</h1>
-        <h3>Tu aprendes. Nosotros creamos. Ellos usan.</h3>
+        <h1>##1006##</h1>
+        <h3>##1007##</h3>
     </div>
 </div>
 
 <a name='whatwedo'></a>
 <div class="container row-fluid">
     <div class="marketing span12">
-        <h2>¿Qué hacemos?</h2>
+        <h2>##1003##</h2>
     </div>
 </div>
 
@@ -83,10 +83,10 @@
     <div class="span1  hidden-phone"></div>
     <div class=" span10">
         <p class='panelText'>
-			Somos una Experience (UX) Agencia de usuario que se especializa en la creación y mejora de productos y servicios digitales para todo tipo de empresas y organizaciones. Llegamos a conocer su negocio, y las motivaciones, objetivos y expectativas de sus clientes. Este conocimiento se forma entonces en un diseño intuitivo y atractivo experiencia.
+			##1008##
          </p>
         <p class='panelText'>
-			Trabajamos con clientes de todo el mundo. En Inglés, francés, italiano y español.
+			##1009##
 		</p>
     </div>
     <div class="span1 hidden-phone"></div>
@@ -94,7 +94,7 @@
 
 <div class="container row-fluid">
     <div class="marketing span12">
-        <h2>Nuestros Servicios</h2>
+        <h2>##1010##</h2>
     </div>
 </div>
 
@@ -104,23 +104,23 @@
       <div class="row-fluid">
         <div class='span4 tile'>
             <center><img class='circle-icon' src='assets/icon_1.png'/></center>
-            <h3>Diseño de Experiencia</h3>
+            <h3>##1011##</h3>
             <p class='panelText'>
-				Todo, desde la mejora de su sitio de comercio electrónico existente para el diseño de una nueva aplicación desde cero. Diseñamos el flujo, y cada pantalla de su producto o servicio, utilizando nuestro sistema UX ágil y delgado. Sus usuarios inmediatamente ser capaz de hacer lo que tienen que hacer.
+				##1012##
               </p>
         </div>
         <div class="span4 tile">
             <center><img class='circle-icon' src='assets/icon_2.png'/></center>
-            <h3>Pruebas de usabilidad</h3>
+            <h3>##1013##</h3>
             <p class='panelText'>
-				Ponemos a prueba qué tan satisfechos están sus clientes con su producto o servicio. Creemos en las pruebas en todas las etapas del proceso de diseño y utilizamos una gran variedad de aprendizaje methods.From observando a analizar los datos de 100 de los clientes, ya que utilizan su servicio.
+				##1014##
 			</p>
         </div>
         <div class="span4 tile">
             <center><img class='circle-icon' src='assets/icon_3.png'/></center>
-            <h3>Formación</h3>
+            <h3>##1015##</h3>
             <p class='panelText'>
-				Nuestros cursos y talleres están diseñados específicamente para cada cliente. Desde ayudar con un proyecto o tema específico (por ejemplo, usuario de pruebas, talleres de diseño de colaboración) para agilizar el proceso de UX dentro de su empresa (e, g Lead UX interino, Agile UX, Lean UX)
+				##1016##
             </p>
         </div>
       </div>
@@ -131,7 +131,7 @@
 <div class="container row-fluid">
   <div class="span1 hidden-phone"></div>
   <div class="span10 ">
-    <center id='processSwitch' class='greybox'>Nuestro proceso &#x25BC;</center>
+    <center id='processSwitch' class='greybox'>##1017## &#x25BC;</center>
     <img id='processImage' class='hideMe' src="assets/uxisready_process_.png"/>
   </div>
   <div class="span1 hidden-phone"></div>
@@ -141,7 +141,7 @@
 
 <div class="container row-fluid">
     <div class="marketing span12">
-         <h2>Gracias a nuestros clientes</h2>
+         <h2>##1018##</h2>
     </div>
 </div>
     
@@ -166,8 +166,8 @@
 ================================================== -->
 <footer class="footer">
        <div class="marketing contactbox">
-            <h2>Listo para hablar de su próximo proyecto?</h2>
-           <h2><a class="btn btn-large btn-primary btn-warning" href='mailto:hello%40uxisready.com?subject=Hello!'>Contáctenos</a></h2>
+            <h2>##1019##</h2>
+           <h2><a class="btn btn-large btn-primary btn-warning" href='mailto:hello%40uxisready.com?subject=Hello!'>##1020##</a></h2>
         </div>
 
     <div class="container">
@@ -181,13 +181,15 @@
         <div class="row-fluid">
             <div class="span12">
                 <ul class="footer-links">
-                    <li><a href="index.es.html">Español</a></li>
+                    <li><strong>##1021##</strong></li>
+                    <li><a href="index.es.html">##1021##</a></li>
                     <li class="muted">&middot;</li>
-                    <li><strong>Inglés</strong></li>
+                    <li><strong>##1022##</strong></li>
+                    <li><a href="index.es.html">##1021##</a></li>
                     <li class="muted">&middot;</li>
-                    <li>© 2013 UX está listo</li>
+                    <li>##1023##</li>
                     <li class="muted hidden-phone">&middot;</li>
-                    <li class="hidden-phone">Reservados todos los derechos</li>
+                    <li class="hidden-phone">##1024##</li>
                  </ul>
             </div>
         </div>

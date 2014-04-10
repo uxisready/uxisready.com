@@ -1,5 +1,5 @@
 /* ========================================== */;
-/* created : Tue Apr 08 2014 17:57:22 GMT+0000 (UTC) */
+/* created : Thu Apr 10 2014 09:58:00 GMT+0000 (UTC) */
 /* keys : 25 */
 /* ========================================== */;
 
@@ -76,7 +76,7 @@ var translations = {
     },
     "1014": {
         "comment": "usabilitytesting",
-        "en": "We test how satisfied your customers are with your product or service. We believe in testing at every stage in the design process and we use a wide variety of methods.From learning by observing to analyzing the data of 100’s of customers as they use your service.",
+        "en": "We test how satisfied your customers are with your product or service. We believe in testing at every stage in the design process and we use a wide variety of methods. From learning by observing to analyzing the data of 100’s of customers as they use your service.",
         "es": "Medimos el grado de satisfacción de tus clientes sobre tu producto o servicio. Creemos en testear en cada etapa del proceso y tenemos un amplio abanico de métodos. Desde aprender por observación, a analizar los datos de cientos de clientes mientras usan tu producto."
     },
     "1015": {
@@ -128,5 +128,10 @@ var translations = {
         "comment": "copyright",
         "en": "All rights reserved",
         "es": "All rights reserved"
+    },
+    "language": {
+        "comment": "comment",
+        "en": "en",
+        "es": "es"
     }
 };

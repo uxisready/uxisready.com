@@ -25,8 +25,15 @@ var request = https.request(options, function (res) {
 		var headers = mydata.shift();
 		headers.shift(); // horrible side effect operation 
 		
-		var translations = {};
-		
+		var translations = {
+      "language": {
+          "comment": "lang",
+      }
+    }
+		for (header in headers) {
+				translations.language[headers[header]] = headers[header]; 
+		}
+ 
 		for (row in mydata) {
 		    var rowData = {};
 		    var keyval = mydata[row].shift();

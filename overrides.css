@@ -201,3 +201,15 @@ p
 .footer {
   border:none;
 }
+
+.en_only, .es_only {
+  display: none;
+}
+
+.en .en_only {
+  display: inline; 
+}
+
+.es .es_only {
+  display: inline;
+}

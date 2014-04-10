@@ -2,16 +2,17 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
-    pkg: grunt.file.readJSON('package.json'),
-
-      build: {
-        src: 'src/<%= pkg.name %>.js',
-        dest: 'build/<%= pkg.name %>.min.js'
-      }
+    pkg: grunt.file.readJSON('package.json')
+  , execute: {
+        target: {
+            src: ['generate_translations.js']
+        }
     }
   });
 
+  grunt.loadNpmTasks('grunt-execute');
+    
   // Default task(s).
-  grunt.registerTask('default', ['build']);
+  grunt.registerTask('default',['execute']);
 
 };

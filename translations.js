@@ -1,5 +1,5 @@
 /* ========================================== */;
-/* created : Thu Apr 10 2014 09:58:00 GMT+0000 (UTC) */
+/* created : Thu Apr 10 2014 17:59:47 GMT+0000 (UTC) */
 /* keys : 25 */
 /* ========================================== */;
 
@@ -46,7 +46,7 @@ var translations = {
     },
     "1008": {
         "comment": "whatwedo",
-        "en": "We are a User Experience (UX) agency that specializes in creating and improving digital products and services for all types of companies and organizations. We get to know your business, and the motivations, goals and expectations of your customers. This knowledge is then shaped into intuitive and engaging experience design.",
+        "en": "We are a User Experience (UX) agency that specializes in creating and improving digital products and services for all types of companies and organizations. We get to know your business, and the motivations, goals and expectations of your customers. This knowledge is then shaped into intuitive and engaging experience design, which positively impacts your revenue.",
         "es": "UX is Ready es una agencia de Experiencia de Usuario (UX) especializada en crear y optimizar productos digitales y servicios para todo tipo de empresas y organizaciones. Nos encanta conocer tu negocio y entender las motivaciones, objetivos y expectativas  de tus clientes. Este conocimiento se plasma en el diseño de increíbles e intuitivas experiencias, que mejora tus ingresos."
     },
     "1009": {
@@ -76,7 +76,7 @@ var translations = {
     },
     "1014": {
         "comment": "usabilitytesting",
-        "en": "We test how satisfied your customers are with your product or service. We believe in testing at every stage in the design process and we use a wide variety of methods. From learning by observing to analyzing the data of 100’s of customers as they use your service.",
+        "en": "We test how satisfied your customers are with your product or service. We believe in testing at every stage in the design process and we use a wide variety of methods. From learning by observing to analyzing the data of 100’s of customers as they use your product.",
         "es": "Medimos el grado de satisfacción de tus clientes sobre tu producto o servicio. Creemos en testear en cada etapa del proceso y tenemos un amplio abanico de métodos. Desde aprender por observación, a analizar los datos de cientos de clientes mientras usan tu producto."
     },
     "1015": {
@@ -86,8 +86,8 @@ var translations = {
     },
     "1016": {
         "comment": "training",
-        "en": "Our trainings and workshops are specifically tailored to each client. From helping with a specific project or subject (e.g User Testing, Design Collaboration Workshops) to streamlining the UX process within  your company (e,g Interim UX Lead, Agile UX ,Lean UX)",
-        "es": "Nuestros cursos y talleres están diseñados a medida para cada cliente. Desde ayudar con un proyecto o tema específico (UX ágil, talleres de diseño colaborativo, UX Lean) para agilizar el proceso de UX dentro de su empresa (UX ágil; Interim Lead UX)."
+        "en": "Our trainings and workshops are specifically tailored to each client. From helping with a specific project or subject (User Testing, Design Collaboration Workshops) to streamlining the UX process within  your company (Interim UX Lead, Agile UX, Lean UX).",
+        "es": "Nuestros cursos y talleres están diseñados a medida para cada cliente. Desde ayudar con un proyecto o tema específico (UX ágil, talleres de diseño colaborativo, UX Lean) para agilizar el proceso de UX dentro de tu empresa (UX ágil; Interim Lead UX)."
     },
     "1017": {
         "comment": "process",

@@ -1,0 +1,17 @@
+{
+    "env": {
+        "node": true
+    },
+
+    "globals": {
+        "var1": true,
+        "var2": false
+    },
+
+    "rules": {
+        "no-console": 0,
+        "strict": 2,
+        "no-extra-strict": 2,
+        "quotes": [2, "double"]
+    }
+}

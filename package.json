@@ -1,8 +1,10 @@
 {
-  "name": "ux-is-ready",
-  "version": "0.1.0",
-  "devDependencies": {
-    "grunt": "~0.4.4",
-    "grunt-execute": "~0.1.5"
-  }
+    "name": "ux-is-ready",
+    "version": "0.1.0",
+    "devDependencies": {
+        "grunt": "~0.4.4",
+        "grunt-execute": "~0.1.5",
+        "grunt-eslint": "~0.3.2",
+        "grunt-jsbeautifier": "~0.2.7"
+    }
 }

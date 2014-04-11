@@ -1,8 +1,8 @@
 "use strict";
 
-(function() {
+(function () {
 
-    module.exports = function(grunt) {
+    module.exports = function (grunt) {
 
         // Project configuration.
         grunt.initConfig({
@@ -25,11 +25,12 @@
             jsbeautifier: {
                 files: ["*.js", "*.json", "*.css"],
                 options: {
-                    html: {},
-                    css: {},
                     js: {
                         braceStyle: "end-expand",
-                        indentSize: 4
+                        indentSize: 4,
+                        preserveNewlines: true,
+                        maxPreserveNewlines: 2,
+                        jslintHappy: true
 
                     }
                 }

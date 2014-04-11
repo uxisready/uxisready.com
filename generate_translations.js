@@ -9,13 +9,13 @@ var options = {
     path: "/spreadsheet/pub?key=0AnRyC36d2KeKdGppOHNjeHpENWNMVm5UbTdMWnZkMkE&single=true&gid=0&output=txt"
 };
 
-var request = https.request(options, function(res) {
+var request = https.request(options, function (res) {
     var data = "";
-    res.on("data", function(chunk) {
+    res.on("data", function (chunk) {
         data += chunk;
     });
 
-    res.on("end", function() {
+    res.on("end", function () {
         var filename = "translations.js";
 
         var mydata = data.split("\n");
@@ -51,11 +51,11 @@ var request = https.request(options, function(res) {
             "/* ========================================== */", "/* created : " + new Date() + " */", "/* keys : " + mydata.length + " */", "/* ========================================== */", "", "var translations = " + beautify(JSON.stringify(translations)) + ";"
         ];
 
-        fs.writeFile(filename, jsFile.join("\n"), function(err) {
+        fs.writeFile(filename, jsFile.join("\n"), function (err) {
             console.log(err ? err : filename + " saved!");
         });
 
-        fs.readFile("index.template", "utf8", function(err, data) {
+        fs.readFile("index.template", "utf8", function (err, data) {
             if (err) {
                 return console.log(err);
             }
@@ -71,7 +71,7 @@ var request = https.request(options, function(res) {
                     copydata = copydata.replace(re, translations[key][headers[targetLanguage]]);
                 }
 
-                fs.writeFile(indexFile, copydata, function(err) {
+                fs.writeFile(indexFile, copydata, function (err) {
                     console.log(err ? err : indexFile + " saved!");
                 });
             }
@@ -80,7 +80,7 @@ var request = https.request(options, function(res) {
     });
 });
 
-request.on("error", function(e) {
+request.on("error", function (e) {
     console.log(e.message);
 });
 

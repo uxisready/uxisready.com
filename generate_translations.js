@@ -11,6 +11,7 @@ var options = {
 
 var request = https.request(options, function (res) {
     var data = "";
+
     res.on("data", function (chunk) {
         data += chunk;
     });
@@ -52,7 +53,7 @@ var request = https.request(options, function (res) {
         ];
 
         fs.writeFile(filename, jsFile.join("\n"), function (err) {
-            console.log(err ? err : filename + " saved!");
+            console.log(err ? err : filename + " generated!");
         });
 
         fs.readFile("index.template", "utf8", function (err, data) {
@@ -61,21 +62,21 @@ var request = https.request(options, function (res) {
             }
 
             headers.shift();
-            for (var targetLanguage in headers) {
+
+            headers.forEach(function(item){
                 var copydata = data;
 
-                var indexFile = ("index." + headers[targetLanguage] + ".html").replace(".en", "");
+                var indexFile = ("index." + item + ".html").replace(".en", "");
 
                 for (var key in translations) {
                     var re = new RegExp("##" + key + "##", "g");
-                    copydata = copydata.replace(re, translations[key][headers[targetLanguage]]);
+                    copydata = copydata.replace(re, translations[key][item]);
                 }
 
                 fs.writeFile(indexFile, copydata, function (err) {
-                    console.log(err ? err : indexFile + " saved!");
+                    console.log(err ? err : [indexFile , " saved! "].join(""));
                 });
-            }
-
+            });
         });
     });
 });

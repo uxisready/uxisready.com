@@ -12,8 +12,5 @@ contains source code for www.uxisready.com
   - testing remote edit with daemon monitoring the webhook
 
 - remember to setup the remote alias as github
-- text text text
-- fig and spinach pizza
-- mmm tasty, tasty, very very tasty...
-- it's alive!
-- broccoli and setas
+- node generate_translations
+- http://docs.google.com/spreadsheet/pub?key=0AnRyC36d2KeKdGppOHNjeHpENWNMVm5UbTdMWnZkMkE

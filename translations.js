@@ -1,5 +1,5 @@
 /* ========================================== */
-/* created : Fri Apr 11 2014 01:22:10 GMT+0000 (UTC) */
+/* created : Tue Apr 15 2014 01:57:22 GMT+0200 (Romance Daylight Time) */
 /* keys : 25 */
 /* ========================================== */
 
@@ -87,7 +87,7 @@ var translations = {
     "1016": {
         "comment": "training",
         "en": "Our trainings and workshops are specifically tailored to each client. From helping with a specific project or subject (User Testing, Design Collaboration Workshops) to streamlining the UX process within  your company (Interim UX Lead, Agile UX, Lean UX).",
-        "es": "Nuestros cursos y talleres están diseñados a medida para cada cliente. Desde ayudar con un proyecto o tema específico (UX ágil, talleres de diseño colaborativo, UX Lean) para agilizar el proceso de UX dentro de tu empresa (UX ágil; Interim Lead UX)."
+        "es": "Nuestros cursos y talleres están diseñados a medida para cada cliente. Desde ayudar con un proyecto o tema específico (UX ágil, talleres de diseño colaborativo, UX Lean) para agilizar el proceso de UX dentro de tu empresa (UX ágil, Interim Lead UX)."
     },
     "1017": {
         "comment": "process",
@@ -111,7 +111,7 @@ var translations = {
     },
     "1021": {
         "comment": "link",
-        "en": "Español",
+        "en": "Spanish",
         "es": "Español"
     },
     "1022": {

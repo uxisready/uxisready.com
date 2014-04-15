@@ -63,7 +63,7 @@ var request = https.request(options, function (res) {
 
             headers.shift();
 
-            headers.forEach(function(item){
+            headers.forEach(function (item) {
                 var copydata = data;
 
                 var indexFile = ("index." + item + ".html").replace(".en", "");
@@ -74,7 +74,7 @@ var request = https.request(options, function (res) {
                 }
 
                 fs.writeFile(indexFile, copydata, function (err) {
-                    console.log(err ? err : [indexFile , " saved! "].join(""));
+                    console.log(err ? err : [indexFile, " saved! "].join(""));
                 });
             });
         });

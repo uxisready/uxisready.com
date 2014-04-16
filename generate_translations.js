@@ -1,22 +1,24 @@
 "use strict";
 
-var https = require("https");
-var beautify = require("js-beautify").js_beautify;
-var fs = require("fs");
+var https = require("https"),
+    jsBeautify = require("js-beautify").js_beautify,
+    fs = require("fs");
 
 var options = {
     hostname: "docs.google.com",
     path: "/spreadsheet/pub?key=0AnRyC36d2KeKdGppOHNjeHpENWNMVm5UbTdMWnZkMkE&single=true&gid=0&output=txt"
-};
+},
+    request = null;
 
-var request = https.request(options, function (res) {
+request = https.request(options, function(res) {
+
     var data = "";
 
-    res.on("data", function (chunk) {
+    res.on("data", function(chunk) {
         data += chunk;
     });
 
-    res.on("end", function () {
+    res.on("end", function() {
         var filename = "translations.js";
 
         var mydata = data.split("\n");
@@ -26,7 +28,7 @@ var request = https.request(options, function (res) {
         }
 
         var headers = mydata.shift();
-        headers.shift(); // horrible side effect operation 
+        headers.shift(); // horrible side effect operation
 
         var translations = {
             "language": {
@@ -49,21 +51,24 @@ var request = https.request(options, function (res) {
         }
 
         var jsFile = [
-            "/* ========================================== */", "/* created : " + new Date() + " */", "/* keys : " + mydata.length + " */", "/* ========================================== */", "", "var translations = " + beautify(JSON.stringify(translations)) + ";"
+            "/* ========================================== */",
+            "/* created : " + new Date() + " */", "/* keys : " + mydata.length + " */",
+            "/* ========================================== */",
+            "var translations = " + jsBeautify(JSON.stringify(translations)) + ";"
         ];
 
-        fs.writeFile(filename, jsFile.join("\n"), function (err) {
+        fs.writeFile(filename, jsFile.join("\n"), function(err) {
             console.log(err ? err : filename + " generated!");
         });
 
-        fs.readFile("index.template", "utf8", function (err, data) {
+        fs.readFile("index.template", "utf8", function(err, data) {
             if (err) {
                 return console.log(err);
             }
 
             headers.shift();
 
-            headers.forEach(function (item) {
+            headers.forEach(function(item) {
                 var copydata = data;
 
                 var indexFile = ("index." + item + ".html").replace(".en", "");
@@ -73,15 +78,15 @@ var request = https.request(options, function (res) {
                     copydata = copydata.replace(re, translations[key][item]);
                 }
 
-                fs.writeFile(indexFile, copydata, function (err) {
-                    console.log(err ? err : [indexFile, " saved! "].join(""));
+                fs.writeFile(indexFile, copydata, function(err) {
+                    console.log(err ? err : [indexFile, " saved!"].join(""));
                 });
             });
         });
     });
 });
 
-request.on("error", function (e) {
+request.on("error", function(e) {
     console.log(e.message);
 });
 

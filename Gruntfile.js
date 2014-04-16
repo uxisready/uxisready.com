@@ -1,8 +1,8 @@
 "use strict";
 
-(function () {
+(function() {
 
-    module.exports = function (grunt) {
+    module.exports = function(grunt) {
 
         // Project configuration.
         grunt.initConfig({
@@ -22,6 +22,14 @@
                 target: ["*.js"] // array of files
             },
 
+            jscs: { // task
+                src: "*.js",
+                options: {
+                    config: ".jscs.json",
+                    validateQuoteMarks: "\x22"
+                }
+            },
+
             jsbeautifier: {
                 files: ["*.js", "*.json", "*.css"],
                 options: {
@@ -30,8 +38,7 @@
                         indentSize: 4,
                         preserveNewlines: true,
                         maxPreserveNewlines: 2,
-                        jslintHappy: true
-
+                        jslintHappy: false
                     }
                 }
             }
@@ -40,10 +47,11 @@
 
         grunt.loadNpmTasks("grunt-execute");
         grunt.loadNpmTasks("grunt-eslint");
+        grunt.loadNpmTasks("grunt-jscs-checker");
         grunt.loadNpmTasks("grunt-jsbeautifier");
 
         // Default task(s).
-        grunt.registerTask("default", ["execute", "eslint", "jsbeautifier"]);
+        grunt.registerTask("default", ["execute", "jsbeautifier", "eslint", "jscs"]);
 
     };
 

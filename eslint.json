@@ -12,6 +12,6 @@
         "no-console": 0,
         "strict": 2,
         "no-extra-strict": 2,
-        "quotes": [2, "double"]
+        "quotes": [ 2, "double" ]
     }
 }

@@ -1,30 +1,30 @@
 "use strict";
 
-var https = require("https"),
-    jsBeautify = require("js-beautify").js_beautify,
-    fs = require("fs");
+var https, jsBeautify, fs, options, request;
 
-var options = {
+https = require( "https" );
+jsBeautify = require( "js-beautify" ).js_beautify;
+fs = require( "fs" );
+
+options = {
     hostname: "docs.google.com",
     path: "/spreadsheet/pub?key=0AnRyC36d2KeKdGppOHNjeHpENWNMVm5UbTdMWnZkMkE&single=true&gid=0&output=txt"
-},
-    request = null;
+};
 
-request = https.request(options, function(res) {
+request = https.request( options, function( res ) {
 
     var data = "";
 
-    res.on("data", function(chunk) {
+    res.on( "data", function( chunk ) {
         data += chunk;
-    });
+    } );
 
-    res.on("end", function() {
-        var filename = "translations.js";
+    res.on( "end", function() {
+        var filename = "translations.js",
+            mydata = data.split( "\n" );
 
-        var mydata = data.split("\n");
-
-        for (var row in mydata) {
-            mydata[row] = (mydata[row].split("\t"));
+        for ( var row in mydata ) {
+            mydata[ row ] = ( mydata[ row ].split( "\t" ) );
         }
 
         var headers = mydata.shift();
@@ -36,58 +36,58 @@ request = https.request(options, function(res) {
             }
         };
 
-        for (var header in headers) {
-            translations.language[headers[header]] = headers[header];
+        for ( var header in headers ) {
+            translations.language[ headers[ header ] ] = headers[ header ];
         }
 
-        for (row in mydata) {
-            var rowData = {};
-            var keyval = mydata[row].shift();
+        for ( row in mydata ) {
 
-            for (header in headers) {
-                rowData[headers[header]] = mydata[row][header];
+            var rowData = {},
+                keyval = mydata[ row ].shift();
+
+            for ( header in headers ) {
+                rowData[ headers[ header ] ] = mydata[ row ][ header ];
             }
-            translations[keyval] = rowData;
+            translations[ keyval ] = rowData;
         }
 
         var jsFile = [
             "/* ========================================== */",
             "/* created : " + new Date() + " */", "/* keys : " + mydata.length + " */",
             "/* ========================================== */",
-            "var translations = " + jsBeautify(JSON.stringify(translations)) + ";"
+            "var translations = " + jsBeautify( JSON.stringify( translations ) ) + ";"
         ];
 
-        fs.writeFile(filename, jsFile.join("\n"), function(err) {
-            console.log(err ? err : filename + " generated!");
-        });
+        fs.writeFile( filename, jsFile.join( "\n" ), function( err ) {
+            console.log( err ? err : filename + " generated!" );
+        } );
 
-        fs.readFile("index.template", "utf8", function(err, data) {
-            if (err) {
-                return console.log(err);
+        fs.readFile( "index.template", "utf8", function( err, data ) {
+            if ( err ) {
+                return console.log( err );
             }
 
             headers.shift();
 
-            headers.forEach(function(item) {
-                var copydata = data;
+            headers.forEach( function( item ) {
+                var copydata = data,
+                    indexFile = ( "index." + item + ".html" ).replace( ".en", "" );
 
-                var indexFile = ("index." + item + ".html").replace(".en", "");
-
-                for (var key in translations) {
-                    var re = new RegExp("##" + key + "##", "g");
-                    copydata = copydata.replace(re, translations[key][item]);
+                for ( var key in translations ) {
+                    var re = new RegExp( "##" + key + "##", "g" );
+                    copydata = copydata.replace( re, translations[ key ][ item ] );
                 }
 
-                fs.writeFile(indexFile, copydata, function(err) {
-                    console.log(err ? err : [indexFile, " saved!"].join(""));
-                });
-            });
-        });
-    });
-});
+                fs.writeFile( indexFile, copydata, function( err ) {
+                    console.log( err ? err : [ indexFile, " saved!" ].join( "" ) );
+                } );
+            } );
+        } );
+    } );
+} );
 
-request.on("error", function(e) {
-    console.log(e.message);
-});
+request.on( "error", function( e ) {
+    console.log( e.message );
+} );
 
 request.end();

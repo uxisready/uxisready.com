@@ -22,14 +22,6 @@
                 target: [ "*.js" ] // array of files
             },
 
-            jscs: { // task
-                src: "*.js",
-                options: {
-                    config: ".jscs.json",
-                    validateQuoteMarks: "\x22"
-                }
-            },
-
             jsbeautifier: {
                 files: [ "*.js", "*.json", "*.css" ],
                 options: {
@@ -43,8 +35,15 @@
                         goodStuff: true
                     }
                 }
-            }
+            },
 
+            jscs: { // task
+                src: "*.js",
+                options: {
+                    config: ".jscs.json",
+                    validateQuoteMarks: "\x22"
+                }
+            }
         } );
 
         grunt.loadNpmTasks( "grunt-execute" );

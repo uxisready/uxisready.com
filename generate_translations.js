@@ -56,9 +56,9 @@ request = https.request( options, function( res ) {
             "/* created : " + new Date() + " */", "/* keys : " + mydata.length + " */",
             "/* ========================================== */",
             "var translations = " + jsBeautify( JSON.stringify( translations ) ) + ";"
-        ];
+        ].join( "\n" );
 
-        fs.writeFile( filename, jsFile.join( "\n" ), function( err ) {
+        fs.writeFile( filename, jsFile, function( err ) {
             console.log( err ? err : filename + " generated!" );
         } );
 

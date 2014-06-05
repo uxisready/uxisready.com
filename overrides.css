@@ -138,13 +138,13 @@ p {
 .footer {
     border: none;
 }
-.en_only,
-.es_only {
-    display: none;
-}
-.en .en_only {
-    display: inline;
-}
-.es .es_only {
-    display: inline;
+.it a.it,
+.es a.es,
+.en a.en,
+.fr a.fr {
+    font-weight: 900;
+    color: currentcolor;
+    cursor: default;
+    text-decoration: none;
+    pointer-events: none;
 }

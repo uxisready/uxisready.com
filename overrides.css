@@ -131,7 +131,8 @@ h2 {
     font-size: 24px;
 }
 p {
-    font-family: Didot, "Bodoni MT", "Century Schoolbook", "Niagara Solid", Utopia, Georgia, Times, "Times New Roman", serif;
+    /*    font-family: Didot, "Bodoni MT", "Century Schoolbook", "Niagara Solid", Utopia, Georgia, Times, "Times New Roman", serif; */
+    font-family: sans-serif;
     color: #5a5a5a;
     font-size: 16px;
 }
@@ -147,4 +148,8 @@ p {
     cursor: default;
     text-decoration: none;
     pointer-events: none;
+}
+img.customer-tile {
+    padding: 15% 0% 15% 5%;
+    vertical-align: middle;
 }

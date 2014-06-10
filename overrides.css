@@ -99,7 +99,7 @@ span.spacer {
     border-top: 1px rgba(201, 96, 51, 1);
 }
 .footer {
-    margin-top: 0;
+    margin-top: 10px;
     padding: 0;
 }
 .marketing h2 {
@@ -151,6 +151,6 @@ p {
     pointer-events: none;
 }
 img.customer-tile {
-    padding: 2% 0% 3% 0%;
+    padding: 0%;
     vertical-align: middle;
 }

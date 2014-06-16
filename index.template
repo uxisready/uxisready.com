@@ -12,7 +12,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="##1001##">
     <meta name="author" content="##1002##">
-
+    
+    <!-- Open Graph protocol -->
+    <meta property="og:title" content="##1000##" />
+    <meta property="og:description" content="##1003##" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.uxisready.com/" />
+    <meta property="og:image" content="http://www.uxisready.com/images/web_snapshot.jpg" />
+    <meta property="og:image:type" content="image/jpg" />
+    
     <!-- Le styles -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -49,6 +57,7 @@
   </head>
 
 <body data-spy="scroll" data-target=".bs-docs-sidebar">
+<img src="http://www.uxisready.com/images/web_snapshot.jpg" />
 <a name='top'></a>
 
 <div class="navbar navbar-fixed-top">

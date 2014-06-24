@@ -61,7 +61,6 @@ p.panelText .icon {
     font-weight: 100;
     color: #888;
     text-align: center;
-    background: rgba(255, 255, 255, 0.7);
 }
 .logo {
     margin-bottom: -32px;
@@ -174,13 +173,13 @@ footer div.container {
     width: 100%;
 }
 .process-page {
-    background: rgba(50, 50, 50, 0.1);
+    background: #f4f4f4;
 }
 .verticalspacer {
     height: 40px;
 }
 .process-diagram {
-    width: 85%;
+    width: 100%;
 }
 h3 {
     text-transform: capitalize;

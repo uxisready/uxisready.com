@@ -158,8 +158,7 @@
         <div class='span6 tile'>
           <h3>##1029.1##</h3>
           <p class='panelText'>##1030## ##1029.1## ##1032##</p>
-          <p class='panelText'>##1033##</p>
-          <p class='panelText'>##1034##</p>
+          <p class='panelText'>##1033##<br/>##1034##</p>
         </div>
         
       </div>
@@ -169,8 +168,7 @@
         <div class='span6 tile'>
           <h3>##1029.1##</h3>
           <p class='panelText'>##1030## ##1029.1## ##1032##<p/>
-          <p class='panelText'>##1033##</p>
-          <p class='panelText'>##1034##</p>
+          <p class='panelText'>##1033##<br/>##1034##</p>
         </div>
         
         <div class='span6 tile'>
@@ -183,14 +181,12 @@
         <div class='span6 tile'>
           <h3>##1029.2##</h3>
           <p class='panelText'>##1035## ##1029.2## ##1037##</p>
-          <p class='panelText'>##1033##</p>
-          <p class='panelText'>##1038##</p>
+          <p class='panelText'>##1033##<br/>##1038##</p>
         </div>
         <div class='span6 tile'>
           <h3>##1029.3##</h3>
           <p class='panelText'>##1039## ##1029.3## ##1041##</p>
-          <p class='panelText'>##1033##</p>
-          <p class='panelText'>##1042##</p>
+          <p class='panelText'>##1033##<br/>##1042##</p>
         </div>
       </div>
     </div>
@@ -286,7 +282,7 @@
 
 <script>
 $('#processSwitch').click(function(){
-   $('#processImage').toggle('slow');
+   $('#processImage').slideToggle();
 });
 </script>
                                                

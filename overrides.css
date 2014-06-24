@@ -167,10 +167,13 @@ img.customer-tile {
 BODY {
     /* padding-top: 0;*/
 }
-footer div.container {
+footer div.baseband {
     background: rgb(197, 197, 197);
+    max-width: 100%;
     margin: 0;
-    width: 100%;
+}
+.container {
+    max-width: 1280px;
 }
 .process-page {
     background: #f4f4f4;
@@ -180,7 +183,4 @@ footer div.container {
 }
 .process-diagram {
     width: 100%;
-}
-h3 {
-    text-transform: capitalize;
 }

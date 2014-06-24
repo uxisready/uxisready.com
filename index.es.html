@@ -57,11 +57,10 @@
   </head>
 
 <body data-spy="scroll" data-target=".bs-docs-sidebar">
-<!--img src="http://www.uxisready.com/images/web_snapshot.jpg" /-->
 <a name='top'></a>
 
 <div class="navbar navbar-fixed-top">
-    <img class='logo pull-left' src="assets/web_logo.png"/>    
+    <img class='logo pull-left' src="assets/web_logo.png"/> 
     <div class="navbar-inner">
         <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
@@ -86,7 +85,8 @@
 
 <a name='top'></a>
 <div class="jumbotron bigpanel">
-    <div class="container fixed">
+    <!--img class='biglogo' src="images/online_outlline.svg" /-->
+    <div class="container fixed">       
         <h1>Moldeamos experiencias increíbles</h1>
         <h3>Aprendes. Creamos. Usan.</h3>
     </div>
@@ -110,12 +110,6 @@
 		</p>
     </div>
     <div class="span1 hidden-phone"></div>
-</div>
-
-<div class="container row-fluid">
-    <div class="marketing span12">
-        <h2>Nuestros Servicios</h2>
-    </div>
 </div>
 
 <div class="container row-fluid">
@@ -148,12 +142,59 @@
     <div class="span1 hidden-phone"></div>
 </div>
 
-<div class="container row-fluid">
+<div class="container row-fluid process-page">
   <div class="span1 hidden-phone"></div>
-  <div class="span10 ">
+  <div class="span10 service-tiles">
     <center id='processSwitch' class='greybox'>Nuestro método &#x25BC;</center>
-    <img id='processImage' class='hideMe' src="assets/uxisready_process_.png"/>
-  </div>
+    
+    <div id='processImage' class="xhideMe">
+      
+      <div class="container row-fluid hidden-desktop hidden-tablet">
+
+        <div class='span6 tile'>
+          <img class="process-diagram" src="images/process.svg"/>    
+        </div>
+        
+        <div class='span6 tile'>
+          <h3>Aprender</h3>
+          <p class='panelText'>Definir juntos tus objectivos, Aprender sobre tu negocio, tus clientes y el panorama competitivo de tu industria. Para luego crear una estrategia UX a medida para tu producto, servicio o software. </p>
+          <p class='panelText'>Nuestros métodos incluyen:</p>
+          <p class='panelText'>Investigación de clientes, talleres con clientes, análisis de la competencia, evaluación heurística y de experto.</p>
+        </div>
+        
+      </div>
+      
+     <div class="container row-fluid hidden-phone">
+
+        <div class='span6 tile'>
+          <h3>Aprender</h3>
+          <p class='panelText'>Definir juntos tus objectivos, Aprender sobre tu negocio, tus clientes y el panorama competitivo de tu industria. Para luego crear una estrategia UX a medida para tu producto, servicio o software. <p/>
+          <p class='panelText'>Nuestros métodos incluyen:</p>
+          <p class='panelText'>Investigación de clientes, talleres con clientes, análisis de la competencia, evaluación heurística y de experto.</p>
+        </div>
+        
+        <div class='span6 tile'>
+          <img class="process-diagram" src="images/process.svg"/>    
+        </div>
+        
+      </div>
+
+      <div class="container row-fluid">
+        <div class='span6 tile'>
+          <h3>Crear</h3>
+          <p class='panelText'>Nuestro objetivo es Crear productos que les encanten a tus clientes. Aplicamos la ciencia del diseño UX para crear experiencias que cumplen con sus necesidades. La programación es cara, y nos aseguramos que se codifique sólo lo que es valioso para tus clientes y tu negocio.</p>
+          <p class='panelText'>Nuestros métodos incluyen:</p>
+          <p class='panelText'>Sketchwork, personas e historias de usuario, mapas de experiencias, guías de estilo, prototipaje rápido.</p>
+        </div>
+        <div class='span6 tile'>
+          <h3>Usar</h3>
+          <p class='panelText'>Diseñamos la facilidad de uso, en estrecha colaboración con el equipo de desarrollo, y seguimos testeando y aprendiendo acerca de cómo tus clientes  Usar tu producto o servicio. Esto asegura que el producto sigue mejorando tras el lanzamiento, lo que maximiza tu retención de clientes. </p>
+          <p class='panelText'>Nuestros métodos incluyen:</p>
+          <p class='panelText'>Laboratorios de aprendisaje, tests de usabilidad, tests A/B, encuestas de usuarios y analíticas web.</p>
+        </div>
+      </div>
+    </div>
+  </div> 
   <div class="span1 hidden-phone"></div>
 </div>
 
@@ -169,13 +210,16 @@
   <div class="span1 hidden-phone"></div>
   <div class="marketing span10">
      <div class="row-fluid">
-        <div class='span3'><img class="customer-tile" src='images/logo_dinube.png'/></div>
-        <div class='span3'><img class="customer-tile" src='images/logo_hp.png'/></div>
-        <div class='span3'><img class="customer-tile" src='images/logo_publicis.png'/></div>
-        <div class='span3'><img class="customer-tile" src='images/logo_snap.png'/></div>
+        <div class='span12'><p class="verticalspacer hidden-tablet hidden-phone">&nbsp;</p></div>
+     </div>
+     <div class="row-fluid">
+        <div class='span3'><img class="customer-tile" src='images/logo_dinube.png'/><p class="verticalspacer hidden-tablet">&nbsp;</p></div>
+        <div class='span3'><img class="customer-tile" src='images/logo_hp.png'/><p class="verticalspacer hidden-tablet hidden-desktop">&nbsp;</p></div>
+        <div class='span3'><img class="customer-tile" src='images/logo_publicis.png'/><p class="verticalspacer hidden-tablet hidden-desktop">&nbsp;</p></div>
+        <div class='span3'><img class="customer-tile" src='images/logo_snap.png'/><p class="verticalspacer hidden-tablet hidden-desktop">&nbsp;</p></div>
      </div>
      <div class="row-fluid hidden-phone hidden-tablet">
-        <div class='span3'><img class="customer-tile" src='images/logo_atom.png'/></div>
+        <div class='span3'><img class="customer-tile" src='images/logo_atom.png'/><p class="verticalspacer hidden-tablet hidden-phone">&nbsp;</p></div>
         <div class='span3'><img class="customer-tile" src='images/logo_bofa.png'/></div>
         <div class='span3'><img class="customer-tile" src='images/logo_radaptive.png'/></div>
         <div class='span3'><img class="customer-tile" src='images/logo_chron.png'/></div>
@@ -187,10 +231,21 @@
 <!-- Footer
 ================================================== -->
 <footer class="footer">
-       <div class="marketing contactbox">
-            <h2>¿Quieres hablarnos de tu próximo proyecto?</h2>
-           <h2><a class="btn btn-large btn-primary btn-warning" href='mailto:hello%40uxisready.com?subject=Hello!'>Contacto </a></h2>
+  
+    <div class="marketing contactbox">
+      <div class="row-fluid">
+        <div class='span1'></div>
+        <div class='span5'><img src="images/online_outlline.svg" /></div>
+        <div class='span5'>
+          <h2>¿Quieres hablarnos de tu próximo proyecto?</h2>  
+          <h2>
+            <a class="" href='https://twitter.com/uxisready'><img id='icon-twitter' class="contact-icon" src="images/icon_twitter.svg"/></a>
+            <a class="" href='mailto:hello%40uxisready.com?subject=Hello!'><img id='icon-email' class="contact-icon" src="images/icon_email.svg"/></a>
+          </h2>
         </div>
+        <div class='span1'></div>
+      </div>
+    </div>
 
     <div class="container">
       

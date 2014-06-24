@@ -93,6 +93,17 @@ span.spacer {
     -moz-background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+.contact-icon {
+    width: 66px;
+    padding: 0 16px 32px 16px;
+}
+.biglogo {
+    background: white;
+    width: 31%;
+    padding: 2% 2% 8% 2%;
 }
 .uppershadow {
     width: 100%;
@@ -153,4 +164,24 @@ p {
 img.customer-tile {
     padding: 0%;
     vertical-align: middle;
+}
+BODY {
+    /* padding-top: 0;*/
+}
+footer div.container {
+    background: rgb(197, 197, 197);
+    margin: 0;
+    width: 100%;
+}
+.process-page {
+    background: rgba(50, 50, 50, 0.1);
+}
+.verticalspacer {
+    height: 40px;
+}
+.process-diagram {
+    width: 85%;
+}
+h3 {
+    text-transform: capitalize;
 }

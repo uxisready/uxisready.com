@@ -69,13 +69,13 @@ request = https.request( options, function( res ) {
 
             headers.shift();
 
-            headers.forEach( function( item ) {
+            headers.forEach( function( language ) {
                 var copydata = data,
-                    indexFile = ( "index." + item + ".html" ).replace( ".en", "" );
+                    indexFile = ( "index." + language + ".html" ).replace( ".en", "" );
 
                 for ( var key in translations ) {
                     var re = new RegExp( "##" + key + "##", "g" );
-                    copydata = copydata.replace( re, translations[ key ][ item ] );
+                    copydata = copydata.replace( re, translations[ key ][ language ] || translations[ key ].en );
                 }
 
                 fs.writeFile( indexFile, copydata, function( err ) {

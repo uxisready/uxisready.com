@@ -117,21 +117,21 @@
     <div class="span10 service-tiles">
       <div class="row-fluid">
         <div class='span4 tile'>
-            <center><img class='circle-icon' src='assets/icon_1.png'/></center>
+            <center><img class='circle-icon' src='assets/graphic_design.svg'/></center>
             <h3>##1011##</h3>
             <p class='panelText'>
 				##1012##
               </p>
         </div>
         <div class="span4 tile">
-            <center><img class='circle-icon' src='assets/icon_2.png'/></center>
+            <center><img class='circle-icon' src='assets/graphic_testing.svg'/></center>
             <h3>##1013##</h3>
             <p class='panelText'>
 				##1014##
 			</p>
         </div>
         <div class="span4 tile">
-            <center><img class='circle-icon' src='assets/icon_3.png'/></center>
+            <center><img class='circle-icon' src='assets/graphic_training.svg'/></center>
             <h3>##1015##</h3>
             <p class='panelText'>
 				##1016##

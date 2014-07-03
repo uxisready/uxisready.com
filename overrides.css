@@ -50,7 +50,7 @@ p.panelText .icon {
     margin-right: 10px;
 }
 .service-tiles .tile {
-    padding: 3%;
+    padding: 1%;
 }
 .service-tiles P.panelText {
     text-align: left;
@@ -184,3 +184,4 @@ footer div.baseband {
 .process-diagram {
     width: 100%;
 }
+

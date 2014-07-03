@@ -185,3 +185,8 @@ footer div.baseband {
     width: 100%;
 }
 
+img.circle-icon {
+    width: 50%;
+    max-width: 200px;
+}
+

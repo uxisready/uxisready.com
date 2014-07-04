@@ -1,59 +1,59 @@
-"use strict";
-
 ( function() {
 
-    module.exports = function( grunt ) {
+  "use strict";
 
-        // Project configuration.
-        grunt.initConfig( {
+  module.exports = function( grunt ) {
 
-            pkg: grunt.file.readJSON( "package.json" ),
+    // Project configuration.
+    grunt.initConfig( {
 
-            execute: {
-                target: {
-                    src: [ "generate_translations.js" ]
-                }
-            },
+      pkg: grunt.file.readJSON( "package.json" ),
 
-            eslint: { // task
-                options: {
-                    config: "eslint.json" // custom config
-                },
-                target: [ "*.js" ] // array of files
-            },
+      execute: {
+        target: {
+          src: [ "generate_translations.js" ]
+        }
+      },
 
-            jsbeautifier: {
-                files: [ "*.js", "*.json", "*.css" ],
-                options: {
-                    js: {
-                        braceStyle: "end-expand",
-                        indentSize: 4,
-                        preserveNewlines: true,
-                        maxPreserveNewlines: 10,
-                        jslintHappy: false,
-                        spaceInParen: true,
-                        goodStuff: true
-                    }
-                }
-            },
+      eslint: { // task
+        options: {
+          config: "eslint.json" // custom config
+        },
+        target: [ "*.js" ] // array of files
+      },
 
-            jscs: { // task
-                src: "*.js",
-                options: {
-                    config: ".jscs.json",
-                    validateQuoteMarks: "\x22"
-                }
-            }
-        } );
+      jsbeautifier: {
+        files: [ "*.js", "*.json", "*.css" ],
+        options: {
+          js: {
+            braceStyle: "end-expand",
+            indentSize: 2,
+            preserveNewlines: true,
+            maxPreserveNewlines: 10,
+            jslintHappy: false,
+            spaceInParen: true,
+            goodStuff: true
+          }
+        }
+      },
 
-        grunt.loadNpmTasks( "grunt-execute" );
-        grunt.loadNpmTasks( "grunt-eslint" );
-        grunt.loadNpmTasks( "grunt-jscs-checker" );
-        grunt.loadNpmTasks( "grunt-jsbeautifier" );
+      jscs: { // task
+        src: "*.js",
+        options: {
+          config: ".jscs.json",
+          validateQuoteMarks: "\x22"
+        }
+      }
+    } );
 
-        // Default task(s).
-        grunt.registerTask( "default", [ "execute", "jsbeautifier", "eslint", "jscs" ] );
+    grunt.loadNpmTasks( "grunt-execute" );
+    grunt.loadNpmTasks( "grunt-eslint" );
+    grunt.loadNpmTasks( "grunt-jscs-checker" );
+    grunt.loadNpmTasks( "grunt-jsbeautifier" );
 
-    };
+    // Default task(s).
+    grunt.registerTask( "default", [ "execute", "jsbeautifier", "eslint", "jscs" ] );
+
+  };
 
 }() );

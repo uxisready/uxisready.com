@@ -156,6 +156,7 @@
       <div class="container row-fluid">    
 
         <img class="process-diagram circle-shadow hidden-tablet hidden-desktop" src="images/process.svg"/>    
+<<<<<<< HEAD
 
           <div class='span6 tile'>
             <h3>##1029.1##</h3>
@@ -173,6 +174,26 @@
          </div>
           <div class='span5 tile hidden-phone'>
           <img class="process-diagram circle-shadow" src="images/process.svg"/>    
+=======
+        <div class="span12">
+          <div class='span6 tile'>
+          <h3>##1029.1##</h3>
+          <p class='panelText'>##1030## ##1029.1## ##1032##</p>
+          <h5>##1033##</h5>
+          <p class='panelText method-list'>##1034##</p>
+          <h3>##1029.2##</h3>
+          <p class='panelText'>##1035## ##1029.2## ##1037##</p>
+          <h5>##1033##</h5>
+          <p class='panelText method-list'>##1038##</p>
+          <h3>##1029.3##</h3>
+          <p class='panelText'>##1039## ##1029.3## ##1041##</p>
+          <h5>##1033##</h5>
+          <p class='panelText method-list'>##1042##</p>
+         </div>
+          <div class='span6 tile hidden-phone'>
+          <img class="process-diagram circle-shadow" src="images/process.svg"/>    
+       </div>
+>>>>>>> 4dde7d89f0f97a27dd046da683cf8d1db9c127a1
         </div>
       </div>
     </div>

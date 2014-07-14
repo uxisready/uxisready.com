@@ -116,21 +116,21 @@
     <div class="span10 service-tiles">
       <div class="row-fluid">
         <div class='span4 tile'>
-            <center><img class='circle-icon' src='images/graphic_design.svg'/></center>
+            <center><img class='circle-icon circle-shadow' src='images/graphic_design.svg'/></center>
             <h3>##1011##</h3>
             <p class='panelText'>
 				##1012##
               </p>
         </div>
         <div class="span4 tile">
-            <center><img class='circle-icon' src='images/graphic_testing.svg'/></center>
+            <center><img class='circle-icon circle-shadow' src='images/graphic_testing.svg'/></center>
             <h3>##1013##</h3>
             <p class='panelText'>
 				##1014##
 			</p>
         </div>
         <div class="span4 tile">
-            <center><img class='circle-icon' src='images/graphic_training.svg'/></center>
+            <center><img class='circle-icon circle-shadow' src='images/graphic_training.svg'/></center>
             <h3>##1015##</h3>
             <p class='panelText'>
 				##1016##
@@ -149,11 +149,12 @@
     <div id='processImage' class="hideMe">
       
       <div class="container row-fluid hidden-desktop hidden-tablet">
-
-        <div class='span6 tile'>
-          <img class="process-diagram" src="images/process.svg"/>    
+        <div class='span1'></div>
+        <div class='span4 tile'>
+          <img class="process-diagram circle-shadow" src="images/process.svg"/>    
         </div>
-        
+        <div class='span1'></div>
+          
         <div class='span6 tile'>
           <h3>##1029.1##</h3>
           <p class='panelText'>##1030## ##1029.1## ##1032##</p>
@@ -171,7 +172,7 @@
         </div>
         
         <div class='span6 tile'>
-          <img class="process-diagram" src="images/process.svg"/>    
+          <img class="process-diagram circle-shadow" src="images/process.svg"/>    
         </div>
         
       </div>

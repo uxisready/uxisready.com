@@ -1,3 +1,10 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,800italic,400,700,800);
+@import url(http://fonts.googleapis.com/css?family=Oswald:700);
+
+body {
+      font-family: "open sans", sans-serif;
+}
+
 .navbar-wrapper {
     position: absolute;
     top: 0;
@@ -44,7 +51,7 @@ ul.nav {
 p.panelText {
     text-align: left;
     line-height: 1.5;
-    padding: 2px;
+    padding: 4%;
 }
 p.panelText .icon {
     margin-right: 10px;
@@ -58,7 +65,7 @@ p.panelText .icon {
 }
 .service-tiles h3 {
     font-size: 14pt;
-    font-weight: 100;
+    font-weight: 400;
     color: #888;
     text-align: center;
 }
@@ -137,15 +144,28 @@ span.spacer {
 .greybox h2 {
     padding: 1%;
 }
-h2 {
-    font-size: 24px;
+
+h1,h2,h3,h4,h5,h6, .marketing h2 {
+  font-family: "open sans", sans-serif;
+  font-weight: 600;
 }
+
+footer h2 {
+  max-width: 80%;
+  text-align: center;
+  margin: auto;
+}
+
+h2 {
+  font-size: 24px;
+}
+
 p {
-    /*    font-family: Didot, "Bodoni MT", "Century Schoolbook", "Niagara Solid", Utopia, Georgia, Times, "Times New Roman", serif; */
-    font-family: sans-serif;
+    font-family: "open sans", sans-serif;
     color: #5a5a5a;
     font-size: 16px;
 }
+
 .footer {
     border: none;
     margin-top: 5%;
@@ -164,9 +184,7 @@ img.customer-tile {
     padding: 0%;
     vertical-align: middle;
 }
-BODY {
-    /* padding-top: 0;*/
-}
+
 footer div.baseband {
     background: rgb(197, 197, 197);
     max-width: 100%;
@@ -184,11 +202,13 @@ footer div.baseband {
 .process-diagram {
     width: 100%;
 }
+
 img.circle-icon {
     width: 50%;
     max-width: 200px;
 }
+
 .circle-shadow {
-    border-radius: 50%;
-    box-shadow: 0px 2px 4px 0px rgba(128, 128, 128, 0.75);
+  border-radius: 50%;
+  box-shadow: 0px 2px 6px 0px rgba(128,128,128,0.75);
 }

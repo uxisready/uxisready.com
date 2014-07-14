@@ -155,52 +155,35 @@
     
     <div id='processImage' class="hideMe">
       
-      <div class="container row-fluid hidden-desktop hidden-tablet">
-        <div class='span1'></div>
-        <div class='span4 tile'>
-          <img class="process-diagram circle-shadow" src="images/process.svg"/>    
-        </div>
-        <div class='span1'></div>
+      <div class="container row-fluid">    
+        <div class='span6 tile '>
           
-        <div class='span6 tile'>
+          <img class="process-diagram circle-shadow hidden-desktop hidden-tablet" src="images/process.svg"/>    
+          
           <h3>##1029.1##</h3>
           <p class='panelText'>##1030## ##1029.1## ##1032##</p>
-          <p class='panelText'>##1033##<br/>##1034##</p>
-        </div>
-        
-      </div>
-      
-     <div class="container row-fluid hidden-phone">
-
-        <div class='span6 tile'>
-          <h3>##1029.1##</h3>
-          <p class='panelText'>##1030## ##1029.1## ##1032##<p/>
-          <p class='panelText'>##1033##<br/>##1034##</p>
-        </div>
-        
-        <div class='span6 tile'>
-          <img class="process-diagram circle-shadow" src="images/process.svg"/>    
-        </div>
-        
-      </div>
-
-      <div class="container row-fluid">
-        <div class='span6 tile'>
+          <h5>##1033##</h5>
+          <p class='panelText method-list'>##1034##</p>
+                
           <h3>##1029.2##</h3>
           <p class='panelText'>##1035## ##1029.2## ##1037##</p>
-          <p class='panelText'>##1033##<br/>##1038##</p>
-        </div>
-        <div class='span6 tile'>
+          <h5>##1033##</h5>
+          <p class='panelText method-list'>##1038##</p>
+
           <h3>##1029.3##</h3>
           <p class='panelText'>##1039## ##1029.3## ##1041##</p>
-          <p class='panelText'>##1033##<br/>##1042##</p>
+          <h5>##1033##</h5>
+          <p class='panelText method-list'>##1042##</p>
+
+          <img class="process-diagram circle-shadow hidden-phone" src="images/process.svg"/>    
+
         </div>
       </div>
     </div>
-  </div> 
+  </div>  
   <div class="span1 hidden-phone"></div>
-</div>
-
+<div>
+  
 <a name='customers'></a>
 
 <div class="container row-fluid">
@@ -238,7 +221,7 @@
     <div class="marketing contactbox">
       <div class="row-fluid">
         <div class='span1'></div>
-        <div class='span5'><img src="images/logo_uxisready.svg" /></div>
+        <div class='span5'><img class="uxisready" src="images/logo_uxisready.svg" /></div>
         <div class='span5'>
           <h2>##1019##</h2>  
           <h2>

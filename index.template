@@ -152,37 +152,33 @@
   <div class="span1 hidden-phone"></div>
   <div class="span10 service-tiles">
     <center id='processSwitch' class='greybox'><h4>##1017## &#x25BC;</h4></center>
-    
-    <div id='processImage' class="hideMe">
-      
+    <div id='processImage' class="hideMe"> 
       <div class="container row-fluid">    
-        <div class='span6 tile '>
-          
-          <img class="process-diagram circle-shadow hidden-desktop hidden-tablet" src="images/process.svg"/>    
-          
-          <h3>##1029.1##</h3>
-          <p class='panelText'>##1030## ##1029.1## ##1032##</p>
-          <h5>##1033##</h5>
-          <p class='panelText method-list'>##1034##</p>
-                
-          <h3>##1029.2##</h3>
-          <p class='panelText'>##1035## ##1029.2## ##1037##</p>
-          <h5>##1033##</h5>
-          <p class='panelText method-list'>##1038##</p>
 
-          <h3>##1029.3##</h3>
-          <p class='panelText'>##1039## ##1029.3## ##1041##</p>
-          <h5>##1033##</h5>
-          <p class='panelText method-list'>##1042##</p>
+        <img class="process-diagram circle-shadow hidden-tablet hidden-desktop" src="images/process.svg"/>    
 
-          <img class="process-diagram circle-shadow hidden-phone" src="images/process.svg"/>    
-
+          <div class='span6 tile'>
+            <h3>##1029.1##</h3>
+            <p class='panelText'>##1030## ##1029.1## ##1032##</p>
+            <h5>##1033##</h5>
+            <p class='panelText method-list'>##1034##</p>
+            <h3>##1029.2##</h3>
+            <p class='panelText'>##1035## ##1029.2## ##1037##</p>
+            <h5>##1033##</h5>
+            <p class='panelText method-list'>##1038##</p>
+            <h3>##1029.3##</h3>
+            <p class='panelText'>##1039## ##1029.3## ##1041##</p>
+            <h5>##1033##</h5>
+            <p class='panelText method-list'>##1042##</p>
+         </div>
+          <div class='span5 tile hidden-phone'>
+          <img class="process-diagram circle-shadow" src="images/process.svg"/>    
         </div>
       </div>
     </div>
-  </div>  
+  </div> 
   <div class="span1 hidden-phone"></div>
-<div>
+</div>
   
 <a name='customers'></a>
 

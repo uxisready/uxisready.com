@@ -1,6 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,800italic,400,700,800);
- @import url(http://fonts.googleapis.com/css?family=Oswald:700);
- body {
+body {
     font-family: "open sans", sans-serif;
 }
 .navbar-wrapper {
@@ -43,20 +42,21 @@ ul.nav {
     padding: 2% 0;
 }
 .bigpanel h1,
-.bigpanel h3 {
+.bigpanel h2 {
     text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.6), 0 -5px 35px rgba(255, 255, 255, 0.8), -.01em .01em 0 #cc6633, -.02em .02em 0 #e69064, -.03em .03em 0 #e6a787, -.04em .04em 0 #853811;
 }
 p.panelText {
-    text-align: left;
+    text-align: justify;
     line-height: 1.8;
 }
 p.panelText .icon {
     margin-right: 10px;
 }
 .service-tiles P.panelText {
-    text-align: left;
     line-height: 1.8;
+    padding:5px;
 }
+
 .service-tiles h3 {
     font-size: 14pt;
     color: #888;
@@ -128,7 +128,6 @@ span.spacer {
     display: none;
 }
 .greybox {
-    background: #f5f5f5;
     padding: 1%;
 }
 .greybox .btn {
@@ -137,6 +136,7 @@ span.spacer {
 .greybox h2 {
     padding: 1%;
 }
+
 h1,
 h2,
 h3,
@@ -153,8 +153,9 @@ footer h2 {
     margin: auto;
 }
 h2 {
-    font-size: 24px;
+    font-size: 30px;
 }
+
 .process-page h5 {
     font-weight: 600;
     margin: 0;
@@ -193,7 +194,7 @@ footer div.baseband {
     margin-top: 20px;
 }
 .process-page {
-    background: #f5f5f5;
+
 }
 .verticalspacer {
     height: 40px;
@@ -215,4 +216,52 @@ img.uxisready {
 .method-list {
     font-style: italic;
     line-height: 1.3 !important;
+}
+
+blockquote {
+  /*font-family: Georgia, serif;*/
+  font-size: 36px;
+  font-style: italic;
+
+  margin: 0.25em 0;
+  line-height: 1.45;
+  position: relative;
+  color: #383838;
+  text-align:left;
+ 
+  display: none;
+  padding: 5%;
+  background: #f5f5f5;
+}
+  
+blockquote:before {
+  display: block;
+  content: "\201C";
+  font-size: 80px;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  color: #7a7a7a;
+}
+
+blockquote cite {
+  color: #999999;
+  font-size: 14px;
+  display: block;
+}
+
+blockquote cite:before {
+content: "\2014 \2009";
+}
+
+.impact {
+  font-size:18pt;
+}
+
+.quotes {
+  margin-bottom:3em;
+}
+
+.marketing p {
+  font-size:18pt;  
 }

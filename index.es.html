@@ -87,7 +87,7 @@
 <div class="jumbotron bigpanel">
     <div class="container fixed">       
         <h1>Moldeamos experiencias increíbles</h1>
-        <h3>Aprendes. Creamos. Usan.</h3>
+        <h2>Aprendes. Creamos. Usan.</h2>
     </div>
 </div>
 
@@ -101,9 +101,7 @@
 <div class="container row-fluid">
     <div class="span1  hidden-phone"></div>
     <div class=" span10">
-        <p class='panelText'>
-			UX is Ready es una agencia de Experiencia de Usuario (UX) especializada en crear y optimizar productos digitales y servicios para todo tipo de empresas y organizaciones. Nos encanta conocer tu negocio y entender las motivaciones, objetivos y expectativas  de tus clientes. Este conocimiento se plasma en el diseño de increíbles e intuitivas experiencias, que mejora tus ingresos.
-         </p>
+        <p class='panelText impact'>UX is Ready es una agencia de Experiencia de Usuario (UX) especializada en crear y optimizar productos digitales y servicios para todo tipo de empresas y organizaciones.</p>
     </div>
     <div class="span1 hidden-phone"></div>
 </div>
@@ -141,9 +139,13 @@
 <div class="container row-fluid">
     <div class="span1  hidden-phone"></div>
     <div class=" span10">
-        <p class='panelText'>
-			Estamos en Barcelona y San Francisco y trabajamos con clientes de todo el mundo. En inglés, francés, italiano y español.
-		</p>
+          <div class="quotes">
+            <blockquote>El comportamiento de la gente tiene sentido si piensas en ello en términos de sus objetivos, necesidades y motivaciones.<cite>bob boberson</cite></blockquote>
+            <blockquote>Si quieres entender como caza un león no vayas al zoo. Vete a la selva.<cite>some dude</cite></blockquote>
+            <blockquote>Conoce al usuario, tu no eres el usuario.<cite>obi wan kenobi</cite></blockquote>
+            <blockquote>La gente ignora el diseño que ignora la gente.<cite>said nobody ever</cite></blockquote>
+          </div>
+      <!--p class='panelText'>Nos encanta conocer tu negocio y entender las motivaciones, objetivos y expectativas  de tus clientes. Este conocimiento se plasma en el diseño de increíbles e intuitivas experiencias, que mejora tus ingresos.</p-->
     </div>
     <div class="span1 hidden-phone"></div>
 </div>  
@@ -182,17 +184,18 @@
 <a name='customers'></a>
 
 <div class="container row-fluid">
-    <div class="marketing span12">
+  <div class="marketing span1"></div>.
+    <div class="marketing span10">
          <h2>Gracias a nuestros clientes</h2>
-    </div>
+         <p class="verticalspacer hidden-tablet hidden-phone">&nbsp;</p>
+         <p class='panelText'>Estamos en Barcelona y San Francisco y trabajamos con clientes de todo el mundo. En inglés, francés, italiano y español.</p>
+  </div>
+  <div class="marketing span1"></div>
 </div>
     
 <div class="row-fluid container">
   <div class="span1 hidden-phone"></div>
   <div class="marketing span10">
-     <div class="row-fluid">
-        <div class='span12'><p class="verticalspacer hidden-tablet hidden-phone">&nbsp;</p></div>
-     </div>
      <div class="row-fluid">
         <div class='span3'><img class="customer-tile" src='images/logo_dinube.png'/><p class="verticalspacer hidden-tablet">&nbsp;</p></div>
         <div class='span3'><img class="customer-tile" src='images/logo_hp.png'/><p class="verticalspacer hidden-tablet hidden-desktop">&nbsp;</p></div>
@@ -209,6 +212,22 @@
   <div class="span1 hidden-phone"></div>
 </div>
 
+<div class="row-fluid container">
+  <div class="span1"></div>
+  <div class="marketing span10">
+
+          <div class="quotes">
+            <blockquote>El comportamiento de la gente tiene sentido si piensas en ello en términos de sus objetivos, necesidades y motivaciones.<cite>bob boberson</cite></blockquote>
+            <blockquote>Si quieres entender como caza un león no vayas al zoo. Vete a la selva.<cite>some dude</cite></blockquote>
+            <blockquote>Conoce al usuario, tu no eres el usuario.<cite>obi wan kenobi</cite></blockquote>
+            <blockquote>La gente ignora el diseño que ignora la gente.<cite>said nobody ever</cite></blockquote>
+          </div>
+
+  </div>
+  <div class="span1"></div>
+</div>
+
+  
 <!-- Footer
 ================================================== -->
 <footer class="footer">
@@ -268,6 +287,13 @@
 $('#processSwitch').click(function(){
    $('#processImage').slideToggle();
 });
+  
+ function switchQuote() {
+   $('BLOCKQUOTE').eq(0).hide().before($('BLOCKQUOTE:last-of-type'));
+   $('BLOCKQUOTE').eq(0).show();
+ }
+ switchQuote();
+  
 </script>
                                                
     <!-- Analytics

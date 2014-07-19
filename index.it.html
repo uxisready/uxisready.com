@@ -187,8 +187,8 @@
   <div class="marketing span1"></div>.
     <div class="marketing span10">
          <h2>Grazie ai nostri clienti</h2>
-         <p class="verticalspacer hidden-tablet hidden-phone">&nbsp;</p>
-         <p class='panelText'>Siamo a Barcellona e San Francisco e lavoriamo con clienti di tutto il mondo. In inglese, francese, italiano e spagnolo.</p>
+         <p class="verticalspacer">&nbsp;</p>
+         <p class='panelText smaller'>Siamo a Barcellona e San Francisco e lavoriamo con clienti di tutto il mondo. In inglese, francese, italiano e spagnolo.</p>
   </div>
   <div class="marketing span1"></div>
 </div>
@@ -289,7 +289,7 @@ $('#processSwitch').click(function(){
 });
   
  function switchQuote() {
-   $('BLOCKQUOTE').eq(0).hide().before($('BLOCKQUOTE:last-of-type'));
+   $('BLOCKQUOTE').eq(0).hide().after($('BLOCKQUOTE:last-of-type'));
    $('BLOCKQUOTE').eq(0).show();
  }
  switchQuote();

@@ -187,8 +187,8 @@
   <div class="marketing span1"></div>.
     <div class="marketing span10">
          <h2>##1018##</h2>
-         <p class="verticalspacer hidden-tablet hidden-phone">&nbsp;</p>
-         <p class='panelText'>##1009##</p>
+         <p class="verticalspacer">&nbsp;</p>
+         <p class='panelText smaller'>##1009##</p>
   </div>
   <div class="marketing span1"></div>
 </div>
@@ -289,7 +289,7 @@ $('#processSwitch').click(function(){
 });
   
  function switchQuote() {
-   $('BLOCKQUOTE').eq(0).hide().before($('BLOCKQUOTE:last-of-type'));
+   $('BLOCKQUOTE').eq(0).hide().after($('BLOCKQUOTE:last-of-type'));
    $('BLOCKQUOTE').eq(0).show();
  }
  switchQuote();

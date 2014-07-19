@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,800italic,400,700,800);
-body {
+ body {
     font-family: "open sans", sans-serif;
 }
 .navbar-wrapper {
@@ -19,7 +19,7 @@ body {
     min-height: 57px;
 }
 .navbar .brand {
-    font-size: 16px;
+    font-size: 12pt;
     font-weight: 700;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, .5);
     padding: 14px 20px 16px;
@@ -54,9 +54,8 @@ p.panelText .icon {
 }
 .service-tiles P.panelText {
     line-height: 1.8;
-    padding:5px;
+    padding: 5px;
 }
-
 .service-tiles h3 {
     font-size: 14pt;
     color: #888;
@@ -118,7 +117,7 @@ span.spacer {
     padding: 1% 0 0 0;
 }
 .footer-links {
-    font-size: 12px;
+    font-size: 10pt;
 }
 #processSwitch {
     color: #08c;
@@ -136,7 +135,6 @@ span.spacer {
 .greybox h2 {
     padding: 1%;
 }
-
 h1,
 h2,
 h3,
@@ -145,7 +143,7 @@ h5,
 h6,
 .marketing h2 {
     font-family: "open sans", sans-serif;
-    font-weight: 600;
+    font-weight: 400;
 }
 footer h2 {
     max-width: 80%;
@@ -153,9 +151,8 @@ footer h2 {
     margin: auto;
 }
 h2 {
-    font-size: 30px;
+    font-size: 24pt;
 }
-
 .process-page h5 {
     font-weight: 600;
     margin: 0;
@@ -164,7 +161,7 @@ h2 {
 p {
     font-family: "open sans", sans-serif;
     color: #5a5a5a;
-    font-size: 16px;
+    font-size: 12pt;
 }
 .footer {
     border: none;
@@ -193,10 +190,7 @@ footer div.baseband {
     max-width: 1024px;
     margin-top: 20px;
 }
-.process-page {
-
-}
-.verticalspacer {
+.process-page {} .verticalspacer {
     height: 40px;
 }
 .process-diagram {
@@ -217,51 +211,49 @@ img.uxisready {
     font-style: italic;
     line-height: 1.3 !important;
 }
-
 blockquote {
-  /*font-family: Georgia, serif;*/
-  font-size: 36px;
-  font-style: italic;
-
-  margin: 0.25em 0;
-  line-height: 1.45;
-  position: relative;
-  color: #383838;
-  text-align:left;
- 
-  display: none;
-  padding: 5%;
-  background: #f5f5f5;
+    /*font-family: Georgia, serif;*/
+    font-size: 24pt;
+    font-style: italic;
+    margin: 0.25em 0;
+    line-height: 1.45;
+    position: relative;
+    color: #383838;
+    text-align: left;
+    display: none;
+    padding: 7%;
+    background: #f5f5f5;
+    border: 5px solid #eee;
 }
-  
-blockquote:before {
-  display: block;
-  content: "\201C";
-  font-size: 80px;
-  position: absolute;
-  left: -20px;
-  top: -20px;
-  color: #7a7a7a;
+blockquote: before {
+    display: block;
+    font-family: georgia, serif;
+    content: "\201C";
+    font-size: 72pt;
+    position: absolute;
+    left: -10px;
+    top: 0px;
+    color: #c66737;
+    margin: 10px;
 }
-
 blockquote cite {
-  color: #999999;
-  font-size: 14px;
-  display: block;
+    color: #c66737;
+    font-size: 14pt;
+    display: block;
+    text-align: right;
 }
-
-blockquote cite:before {
-content: "\2014 \2009";
+blockquote cite: before {
+    content: "\2014 \2009";
 }
-
 .impact {
-  font-size:18pt;
+    font-size: 18pt;
 }
-
 .quotes {
-  margin-bottom:3em;
+    margin-bottom: 3em;
 }
-
 .marketing p {
-  font-size:18pt;  
+    font-size: 18pt;
+}
+p.panelText.smaller {
+    font-size: 12pt;
 }

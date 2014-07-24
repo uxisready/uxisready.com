@@ -136,27 +136,37 @@
     <div class="span1 hidden-phone"></div>
 </div>
 
-<div class="container row-fluid">
-    <div class="span1  hidden-phone"></div>
-    <div class=" span10">
-          <div class="quotes">
-            <blockquote>People’s behavior makes sense if you think about it in terms of their goals, needs, and motives.<cite>bob boberson</cite></blockquote>
-            <blockquote>If you want to understand how a lion hunts don’t go to the zoo. Go to the jungle.<cite>some dude</cite></blockquote>
-            <blockquote>Know the user, you are not the user.<cite>obi wan kenobi</cite></blockquote>
-            <blockquote>People ignore design that ignores people.<cite>said nobody ever</cite></blockquote>
-          </div>
-      <!--p class='panelText'>Nous serons ravi de vous connaître et de comprendre les motivations, les objectifs et les attentes de vos clients. Ce savoir est façonné dans la conception d'expériences intuitives et efficaces, qui ont un impact positif sur vos chiffres d'affaires.  </p-->
+  <div class="container row-fluid">
+    <div class="span1"></div>
+    <div id="carousel1" class="carousel slide span10">
+      <span class="btn-prev"><</span><span class="btn-next">></span>
+        <div class="carousel-inner quotes">
+            <div class="item active">
+              <div class="quotes">
+                <blockquote class="brand_purple_bg">People’s behavior makes sense if you think about it in terms of their goals, needs, and motives.<cite>Thomas Mann</cite></blockquote>
+              </div>
+            </div>
+            <div class="item">
+              <div class="quotes">
+                <blockquote class="brand_mustard_bg">If you want to understand how a lion hunts don’t go to the zoo. Go to the jungle.<cite>Jim Stengel</cite></blockquote>
+              </div>
+            </div>
+            <div class="item">
+              <div class="quotes">
+                <blockquote class="brand_sapphire_bg">Know the user, you are not the user.<cite>Arnie Lund</cite></blockquote>
+              </div>
+            </div>
+        </div>
     </div>
-    <div class="span1 hidden-phone"></div>
-</div>  
+    <div class="span1"></div>
+</div>
   
 <div class="container row-fluid process-page">
   <div class="span1 hidden-phone"></div>
   <div class="span10 service-tiles">
-    <center id='processSwitch' class='greybox'><h4>Notre méthode &#x25BC;</h4></center>
+    <center id='processSwitch' class='processSwitch greybox'><h4>Notre méthode &#x25BC;</h4></center>
     <div id='processImage' class="hideMe"> 
       <div class="container row-fluid">    
-
         <img class="process-diagram circle-shadow hidden-tablet hidden-desktop" src="images/process.svg"/>    
           <div class='span6 tile'>
             <h3>Apprendre</h3>
@@ -192,7 +202,7 @@
   </div>
   <div class="marketing span1"></div>
 </div>
-    
+  
 <div class="row-fluid container">
   <div class="span1 hidden-phone"></div>
   <div class="marketing span10">
@@ -211,50 +221,25 @@
   </div>
   <div class="span1 hidden-phone"></div>
 </div>
-
-<div class="row-fluid container">
-  <div class="span1"></div>
-  <div class="marketing span10">
-
-          <div class="quotes">
-            <blockquote>People’s behavior makes sense if you think about it in terms of their goals, needs, and motives.<cite>bob boberson</cite></blockquote>
-            <blockquote>If you want to understand how a lion hunts don’t go to the zoo. Go to the jungle.<cite>some dude</cite></blockquote>
-            <blockquote>Know the user, you are not the user.<cite>obi wan kenobi</cite></blockquote>
-            <blockquote>People ignore design that ignores people.<cite>said nobody ever</cite></blockquote>
-          </div>
-
-  </div>
-  <div class="span1"></div>
-</div>
-
-  
+ 
 <!-- Footer
 ================================================== -->
 <footer class="footer">
   
-    <div class="marketing contactbox">
-      <div class="row-fluid">
-        <div class='span1'></div>
-        <div class='span5'><img class="uxisready" src="images/logo_uxisready.svg" /></div>
-        <div class='span5'>
-          <h2>Et si nous parlions de votre prochain projet?</h2>  
-          <h2>
-            <a class="" href='https://twitter.com/uxisready'><img id='icon-twitter' class="contact-icon" src="images/icon_twitter.svg"/></a>
-            <a class="" href='mailto:hello%40uxisready.com?subject=Hello!'><img id='icon-email' class="contact-icon" src="images/icon_email.svg"/></a>
-          </h2>
-        </div>
-        <div class='span1'></div>
+  <div class="marketing contactbox">
+    <div class="row-fluid">
+      <div class='span1'></div>
+      <div class='span5'><img class="uxisready" src="images/logo_uxisready.svg" /></div>
+      <div class='span5'>
+        <h2>Et si nous parlions de votre prochain projet?</h2>  
+        <h2>
+          <a class="" href='https://twitter.com/uxisready'><img id='icon-twitter' class="contact-icon" src="images/icon_twitter.svg"/></a>
+          <a class="" href='mailto:hello%40uxisready.com?subject=Hello!'><img id='icon-email' class="contact-icon" src="images/icon_email.svg"/></a>
+        </h2>
       </div>
+      <div class='span1'></div>
     </div>
-
-    <div class="container">
-      
- 
-        <!--
-        <p>Designed and built with all the love in the world by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
-        <p>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
-        -->
-    </div>
+  </div>
 
   <div class="row-fluid baseband">
     <div class="span6">
@@ -276,31 +261,10 @@
 
 </footer>
 
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="bootstrap/js/jquery.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="bootstrap/js/holder/holder.js"></script>
-
-<script>
-$('#processSwitch').click(function(){
-   $('#processImage').slideToggle();
-});
-  
- function switchQuote() {
-   $('BLOCKQUOTE').eq(0).hide().after($('BLOCKQUOTE:last-of-type'));
-   $('BLOCKQUOTE').eq(0).show();
- }
- switchQuote();
-  
-</script>
-                                               
-    <!-- Analytics
-    ================================================== -->
-    <script>
-    </script>
-
-  </body>
-</html>
-<!-- talk is cheap, comments are welcome -->
+<script src="bootstrap/js/jquery.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/holder/holder.js"></script>
+<script src="index.js"></script>
+                                             
+<!-- Analytics ================================================== -->
+</body></html>

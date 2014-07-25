@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,800italic,400,700,800);
- body {
+body {
     font-family: "open sans", sans-serif;
 }
 h1,
@@ -7,17 +7,18 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-    font-family: "open sans", sans-serif;
-    font-weight: 400;
+h6
+{
+  font-family: "open sans", sans-serif;
+  font-weight: 400;
 }
 h1 {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 h2 {
-    color: #c66737;
-    text-align: center;
-    font-size: 24pt;
+  color: #c66737;
+  text-align: center;
+  font-size: 24pt;
 }
 p {
     font-family: "open sans", sans-serif;
@@ -41,8 +42,9 @@ blockquote {
     text-align: left;
     padding: 7%;
     border: 10px solid rgba(153, 153, 153, 0.35);
-    border-radius: 10px;
+    border-radius:10px;
     box-shadow: 0px 4px 6px 0px rgba(128, 128, 128, 0.75);
+
 }
 blockquote: before {
     display: block;
@@ -53,13 +55,13 @@ blockquote: before {
     left: -10px;
     top: 0px;
     color: #c66737;
-    margin: 10px;
+    margin: 10px;  
 }
 blockquote cite {
     color: #c66737;
     display: block;
     text-align: right;
-    font-weight: 800;
+    font-weight:800;
     text-shadow: 1px 1px 7px rgba(10, 10, 10, 0.5);
     margin-top: 2em;
 }
@@ -71,11 +73,18 @@ footer h2 {
     text-align: center;
     margin: auto;
 }
+
 footer div.baseband {
     background: rgb(197, 197, 197);
     max-width: 100%;
     margin: 0;
 }
+
+.container {
+    max-width: 1024px;
+    margin-top: 20px;
+}
+
 .navbar-wrapper {
     position: absolute;
     top: 0;
@@ -113,11 +122,17 @@ footer div.baseband {
     padding: 2% 0;
 }
 .jumbotron h2 {
-    color: white;
+  color: white;
 }
 .bigpanel h1,
 .bigpanel h2 {
-    text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.6), 0 -5px 35px rgba(255, 255, 255, 0.8), -.01em .01em 0 #cc6633, -.02em .02em 0 #e69064, -.03em .03em 0 #e6a787, -.04em .04em 0 #853811;
+    text-shadow: 
+      2px 8px 6px rgba(0, 0, 0, 0.6), 
+      0 -5px 35px rgba(255, 255, 255, 0.8), 
+      -.01em .01em 0 #cc6633, 
+      -.02em .02em 0 #e69064, 
+      -.03em .03em 0 #e6a787, 
+      -.04em .04em 0 #853811;
 }
 .service-tiles p.panelText {
     line-height: 1.8;
@@ -174,8 +189,9 @@ footer div.baseband {
 .footer {
     border: none;
     margin-top: 5%;
-    padding: 0;
+    padding:0;
 }
+
 .footer-links {
     font-size: 10pt;
 }
@@ -193,10 +209,6 @@ footer div.baseband {
     cursor: default;
     text-decoration: none;
     pointer-events: none;
-}
-.container {
-    max-width: 1024px;
-    margin-top: 20px;
 }
 .processSwitch {
     color: #08c;
@@ -217,23 +229,22 @@ footer div.baseband {
     font-size: 18pt;
 }
 .brand_purple_bg {
-    background-color: #a458a2;
-    color: white;
+  background-color: #a458a2;  
+  color:white;
 }
 .brand_mustard_bg {
-    background-color: #e2da4b;
-    color: black;
+  background-color: #e2da4b;
+  color:black;
 }
 .brand_sapphire_bg {
-    background-color: #3563ae;
-    color: white;
+  background-color: #3563ae;
+  color:white;
 }
-.btn-prev,
-.btn-next {
-    font-size: 6em;
-    color: #c66737;
-    cursor: pointer;
+.btn-prev, .btn-next {
+  font-size:6em;
+  color: #c66737;
+  cursor:pointer;
 }
-.btn-next {
-    float: right;
+.btn-next { 
+  float:right;
 }

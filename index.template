@@ -120,48 +120,60 @@
     </div>
 
     <div class="container row-fluid our_process">
-    </div>
 
-      <h2>Our Process</h2>
-      <p class="verticalspacer">&nbsp;</p>
-    <div id="process-carousel" class="container row-fluid process-carousel">
-      <div class="span4">
-      <img id="process-diagram" class="process-diagram circle-shadow" src="images/process.svg"/>
-    </div>
-      <div class="span8">
-        <div id="carousel2" class="carousel slide" data-ride="carousel">
-        <ul class="nav nav-pills nav-justified">
-            <li data-target="#carousel2" data-slide-to="0" class="active brand_purple_bg">
-                <a href="#">##1029.1##<small></small></a>
+       <h2>Our Process</h2>
+       <p class="verticalspacer">&nbsp;</p>
+       <ul class="nav nav-pills nav-justified service-tiles process-nav">
+            <li data-target="#carousel2" data-slide-to="0" class="brand_purple_bar">
+                <a href="#"><h3>##1029.1##</h3></a>
             </li>
-            <li data-target="#carousel2" data-slide-to="1" class="brand_mustard_bg">
-                <a href="#">##1029.2##<small></small></a>
+            <li data-target="#carousel2" data-slide-to="1" class="brand_mustard_bar">
+                <a href="#"><h3>##1029.2##</h3></a>
             </li>
-            <li data-target="#carousel2" data-slide-to="2" class="brand_sapphire_bg">
-                <a href="#">##1029.3##<small></small></a>
+            <li data-target="#carousel2" data-slide-to="2" class="brand_sapphire_bar">
+                <a href="#"><h3>##1029.3##</h3></a>
             </li>
         </ul>
-        <div class="carousel-inner">
-            <div class="item active">
-               <p class='panelText'>##1030## ##1029.1## ##1032##</p>
-               <h5>##1033##</h5>
-               <p class='panelText method-list'>##1034##</p>
-            </div>
-            <div class="item">
-               <p class='panelText'>##1035## ##1029.2## ##1037##</p>
-               <h5>##1033##</h5>
-               <p class='panelText method-list'>##1038##</p>
-            </div>
-            <div class="item">
-               <p class='panelText'>##1039## ##1029.3## ##1041##</p>
-               <h5>##1033##</h5>
-               <p class='panelText method-list'>##1042##</p>
-            </div>
+       <div id="process-carousel" class="container row-fluid process-carousel">
+        <div class="span6">
+           <div id="carousel2" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+              <div class="item active">
+                 <p class='panelText'>##1030## ##1029.1## ##1032##</p>
+                 <h5>##1033##</h5>
+                 <p class='panelText method-list'>##1034##</p>
+              </div>
+              <div class="item">
+                 <p class='panelText'>##1035## ##1029.2## ##1037##</p>
+                 <h5>##1033##</h5>
+                 <p class='panelText method-list'>##1038##</p>
+              </div>
+              <div class="item">
+                 <p class='panelText'>##1039## ##1029.3## ##1041##</p>
+                 <h5>##1033##</h5>
+                 <p class='panelText method-list'>##1042##</p>
+              </div>
+          </div>
+       </div>
         </div>
-      </div>
-      </div>
+         <div class="span1 hidden-phone"></div>
+         <div class="span5">
+            <img id="process-diagram" class="process-diagram circle-shadow" src="images/process.svg"/>
+          </div>
+       </div>
+       <div class="container row-fluid carousel-dots">
+            <div class="span2 hidden-phone"></div>
+            <div class="span8">
+              <ul class="nav nav-pills nav-justified service-tiles dots">
+                <li class="active brand_purple">&nbsp;</li>
+                <li class="brand_mustard">&nbsp;</li>
+                <li class="brand_sapphire">&nbsp;</li>
+              </ul>      
+            </div>
+            <div class="span2 hidden-phone"></div>
+         </div>
     </div>
-   
+
     <a name='customers'></a>
 
     <div class="container row-fluid customer_panel">

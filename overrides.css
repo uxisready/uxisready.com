@@ -228,18 +228,27 @@ footer div.baseband {
 .impact {
     font-size: 18pt;
 }
-.brand_purple_bg {
-  background-color: #a458a2;  
-  color:white;
+
+.active.brand_purple {
+  border:10px solid #a458a2;  
 }
-.brand_mustard_bg {
-  background-color: #e2da4b;
-  color:black;
+.active.brand_mustard {
+  border:10px solid #e2da4b;
 }
-.brand_sapphire_bg {
-  background-color: #3563ae;
-  color:white;
+.active.brand_sapphire {
+    border:10px solid #3563ae;
 }
+
+.active.brand_purple_bar {
+  border-top:10px solid #a458a2;  
+}
+.active.brand_mustard_bar {
+  border-top:10px solid #e2da4b;
+}
+.active.brand_sapphire_bar {
+    border-top:10px solid #3563ae;
+}
+
 .btn-prev, .btn-next {
   font-size:6em;
   color: #c66737;
@@ -248,47 +257,80 @@ footer div.baseband {
 .btn-next { 
   float:right;
 }
-/* Carousel ======================================================================== */
+/* <!-- Carousel ======================================================================== */
 
-#carousel2 .nav a small {
-    display: block;
-}
-#carousel2 .nav {
-    /*    background: #eee;*/
-}
 .nav-justified > li > a {
     border-radius: 0px;
 }
+
 .nav-pills > li {
     font-size: 14pt;
     text-align: center;
     width: 33%;
+    border-top: 10px solid #999; 
 }
-.nav-pills > li.active a {
-    background-color: inherit;
-    font-weight: 800;
+
+.nav-pills > li a h3, .nav-pills > li a {
+  padding:0;margin:0;
 }
+
+.nav-pills>.active>a, .nav-pills>.active>a:hover, .nav-pills>.active>a:focus {
+   background-color: transparent;
+}
+
+.nav-pills > li.active a h3 {
+    background-color: transparent;
+    color:black;
+    font-size: 18pt;
+}
+
 .rotate-deg0 {
+    transition: 4s ease-in-out;
     transform: rotate(0deg);
     box-shadow: 0px 4px 6px 0px rgba(128, 128, 128, 0.75);
 }
 .rotate-deg90 {
+    transition: 4s ease-in-out;
     transform: rotate(90deg);
     box-shadow: 4px 0px 6px 0px rgba(128, 128, 128, 0.75);
 }
 .rotate-deg180 {
+    transition: 4s ease-in-out;
     transform: rotate(180deg);
-    box-shadow: 0px -4px 6px 0px rgba(128, 128, 128, 0.75);
+    box-shadow: 4px -4px 6px 0px rgba(128, 128, 128, 0.75);
 }
 .rotate-deg270 {
-    transform: rotate(270deg);
+    transition: 4s ease-in-out;
+    transform: rotate(-90deg);
     box-shadow: -4px 0px 6px 0px rgba(128, 128, 128, 0.75);
 }
+
 img.customer-tile {
     border: 5px solid white;
     border-radius: 5px;
     box-shadow: 0px 4px 6px 0px rgba(128, 128, 128, 0.75);
 }
-body {
-    background-color: #ececdc;
+
+.dots {
+  margin-left:auto;
+  margin-right:auto;
 }
+
+.dots li {
+  border: 10px solid rgba(0,0,0,0.1);
+  height: 0.3em;
+  width: 0.3em;
+  float: left;
+  border-radius: 50%;
+  margin: 0 15px;
+}
+
+img#process-diagram {
+  padding:5px;
+}
+
+body {
+    background-color: rgba(0,0,0,0.1);
+   /* background-image: url(images/bg.png);*/
+}
+

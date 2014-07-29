@@ -34,38 +34,52 @@ $( ".btn-next" ).click( function() {
 
 $( window ).resize( function() {
   equalHeights( "#carousel1 blockquote" );
-  $( "#process-diagram" ).attr( "max-width", $( ".circle-icon" ).width() * 2 );
-  console.log( "resize" );
+//  $("#process-diagram").attr("max-width",$(".circle-icon").width()*3);
 } );
 
-$( "#carousel2" ).carousel( {
-  interval: 5000
-} );
+$("#process-carousel").carousel({
+  interval: 0
+});
 
-var clickEvent = false,
-  rotate = [ "rotate-deg270", "rotate-deg0", "rotate-deg90", "rotate-deg180" ],
-  processCarousel = $( "#process-carousel" );
+var clickEvent = false
+  , processCarousel = $("#process-carousel")
+  , processNav = $(".process-nav")
+  ;
 
-$( "#carousel2" ).on( "click", ".nav a", function() {
+function setProcessTab(tab) {
+   $(".nav li").removeClass("active");
+  tab.addClass("active");
+
+}
+
+$(".our-process").on("click", ".nav a", function () {
   clickEvent = true;
-  $( ".nav li", processCarousel ).removeClass( "active" );
-  $( this ).parent().addClass( "active" );
-} ).on( "slid.bs.carousel", function() {
-  if ( !clickEvent ) {
+  console.log("nav click");
+  $(".nav li").removeClass("active");
+  $(this).parent().addClass("active");
+  //setProcessTab($(this).parent());
+}).on("slid.bs.carousel", function () {
+  if (!clickEvent) {
 
-    var count = $( ".nav", processCarousel ).children().length - 1,
-      current = $( ".nav li.active", processCarousel ),
-      id = parseInt( current.data( "slide-to" ) );
+    var current = $("li.active", processNav)
+      , id = parseInt(current.data("slide-to"))
+      ;
 
-    current.removeClass( "active" ).next().addClass( "active" );
-    console.log( count, id, rotate[ id ] );
-    if ( count === id ) {
-      $( ".nav li", processCarousel ).first().addClass( "active" );
+    current.removeClass("active").next().addClass("active");
+
+    if (id === 0) {
+      $("li", processNav).first().addClass("active");
     }
+    
+//    var rotate = [ "rotate-deg270" , "rotate-deg0" , "rotate-deg90" , "rotate-deg0" ];
+//    $(".process-diagram", processCarousel).removeClass (function (index, css) {
+//      return (css.match (/(^|\s)rotate-\S+/g) || []).join(" ");
+//    }).addClass(rotate[id]);
+    
+    $(".dots li").removeClass("active");
+    $(".dots li:eq("+id+")").addClass("active");
 
-    $( ".process-diagram", processCarousel ).removeClass( function( index, css ) {
-      return ( css.match( /(^|\s)rotate-\S+/g ) || [] ).join( " " );
-    } ).addClass( rotate[ id ] );
   }
+    
   clickEvent = false;
-} );
+});

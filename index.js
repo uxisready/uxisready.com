@@ -34,7 +34,7 @@ $( ".btn-next" ).click( function() {
 
 $( window ).resize( function() {
   equalHeights( "#carousel1 blockquote" );
-  //  $("#process-diagram").attr("max-width",$(".circle-icon").width()*3);
+  $( "#process-diagram" ).attr( "max-width", $( ".circle-icon" ).width() * 2 );
 } );
 
 $( "#process-carousel" ).carousel( {

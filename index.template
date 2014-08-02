@@ -118,31 +118,35 @@
           </div>
         </div>
     </div>
- <div>
-    <div class="container row-fluid quote_carousel wide-page">
+
+    <div class="container row-fluid quote_carousel">
       <div class="chevron prev span1"><img src="images/arrow_back.svg"/></div>
       <div id="carousel1" class="carousel slide span10">
         <div class="carousel-inner quotes">
           <div class="item active">
             <div class="quotes">
-              <blockquote class="brand_purple_bg">##1025##<cite>##1025.1##</cite></blockquote>
+              <blockquote class="brand_purple_bg">
+                <img class="quotemarks" src="images/quotes.svg"/>
+                <div>##1025##</div>
+                <cite>##1025.1##</cite>
+              </blockquote>
             </div>
           </div>
           <div class="item">
             <div class="quotes">
-              <blockquote class="brand_mustard_bg">##1026##<cite>##1026.1##</cite></blockquote>
+              <blockquote class="brand_mustard_bg"><img class="quotemarks" src="images/quotes.svg"/><div>##1026##</div><cite>##1026.1##</cite></blockquote>
             </div>
           </div>
           <div class="item">
             <div class="quotes">
-              <blockquote class="brand_sapphire_bg">##1027##<cite>##1027.1##</cite></blockquote>
+              <blockquote class="brand_sapphire_bg"><img class="quotemarks" src="images/quotes.svg"/><div>##1027##</div><cite>##1027.1##</cite></blockquote>
             </div>
           </div>
         </div>
       </div>
       <div class="chevron next span1"><img src="images/arrow_forward.svg"/></div>
     </div>
-    </div>
+
     <div class="container row-fluid our_process">
 
        <h2>Our Process</h2>
@@ -200,23 +204,24 @@
 
     <a name='customers'></a>
 
-    <div class="container row-fluid customer_panel">
+    <div class="container row-fluid customer_panel ">
       <h2>##1018##</h2>
       <p class="verticalspacer">&nbsp;</p>
       <p class='panelText smaller'>##1009##</p>
-      <div class="container row-fluid customer_logos">
-         <div class="row-fluid row_logos">
-            <div class='span3'><img class="customer-tile" src='images/logo_dinube.png'/><p class="hidden-tablet">&nbsp;</p></div>
-            <div class='span3'><img class="customer-tile" src='images/logo_hp.png'/><p class="hidden-tablet hidden-desktop">&nbsp;</p></div>
-            <div class='span3'><img class="customer-tile" src='images/logo_publicis.png'/><p class="hidden-tablet hidden-desktop">&nbsp;</p></div>
-            <div class='span3'><img class="customer-tile" src='images/logo_snap.png'/><p class="hidden-tablet hidden-desktop">&nbsp;</p></div>
-         </div>
-         <div class="row-fluid row_logos hidden-phone">
-            <div class='span3'><img class="customer-tile" src='images/logo_atom.png'/><p class="hidden-tablet hidden-phone">&nbsp;</p></div>
-            <div class='span3'><img class="customer-tile" src='images/logo_bofa.png'/></div>
-            <div class='span3'><img class="customer-tile" src='images/logo_radaptive.png'/></div>
-            <div class='span3'><img class="customer-tile" src='images/logo_chron.png'/></div>
-         </div>
+    </div>
+    
+    <div class="container row-fluid customer_logos">
+      <div class="row_fluid">
+        <div class='span3 customer_logo'><img src="images/logo_dinube.png" alt="Dinube"/></div>
+        <div class='span3 customer_logo'><img src="images/logo_hp.png" alt="HP"/></div>
+        <div class='span3 customer_logo'><img src="images/logo_publicis.png" alt="Publicis"/></div>
+        <div class='span3 customer_logo'><img src="images/logo_snap.png" alt="Snapfish"/></div>
+      </div>
+      <div class="hidden-phone row_fluid">
+        <div class='span3 customer_logo'><img src="images/logo_atom.png" alt="Atom Entertainment"/></div>
+        <div class='span3 customer_logo'><img src="images/logo_bofa.png" alt="Bank of America"/></div>
+        <div class='span3 customer_logo'><img src="images/logo_radaptive.png" alt="Radaptive Inc."/></div>
+        <div class='span3 customer_logo'><img src="images/logo_chron.png" alt="San Francisco Chronicle"/></div>
       </div>
     </div>
     

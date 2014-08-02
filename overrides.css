@@ -9,7 +9,8 @@ h4,
 h5,
 h6 {
     font-family: "open sans", sans-serif;
-    font-weight: 400;
+    font-weight: 800;
+    text-shadow: rgba(255, 255, 255, 0.3) 0px 3px 3px;
 }
 h1 {
     margin: 10px 0;
@@ -44,27 +45,15 @@ blockquote {
     border-radius: 10px;
     box-shadow: 0px 4px 6px 0px rgba(128, 128, 128, 0.75);
 }
-blockquote: before {
-    display: block;
-    font-family: georgia, serif;
-    content: "\201C";
-    font-size: 72pt;
-    position: absolute;
-    left: -10px;
-    top: 0px;
-    color: #c66737;
-    margin: 10px;
-}
 blockquote cite {
     color: #c66737;
     display: block;
     text-align: right;
     font-weight: 800;
-    text-shadow: 1px 1px 7px rgba(10, 10, 10, 0.5);
-    margin-top: 2em;
 }
-blockquote cite: before {
-    content: "\2014 \2009";
+blockquote DIV {
+    font-weight: 800;
+    padding-left: 25%;
 }
 footer h2 {
     max-width: 80%;
@@ -121,7 +110,9 @@ footer div.baseband {
 }
 .bigpanel h1,
 .bigpanel h2 {
-    text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.6), 0 -5px 35px rgba(255, 255, 255, 0.8), -.01em .01em 0 #cc6633, -.02em .02em 0 #e69064, -.03em .03em 0 #e6a787, -.04em .04em 0 #853811;
+    text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.6)
+    /*,0 -5px 35px rgba(255, 255, 255, 0.8), -.01em .01em 0 #cc6633, -.02em .02em 0 #e69064, -.03em .03em 0 #e6a787, -.04em .04em 0 #853811*/
+    ;
 }
 .service-tiles p.panelText {
     line-height: 1.8;
@@ -216,6 +207,17 @@ footer div.baseband {
 .impact {
     font-size: 18pt;
 }
+.brand_purple_bg {
+    background-color: #a458a2;
+    color: white;
+}
+.brand_mustard_bg {
+    background-color: #e2da4b;
+}
+.brand_sapphire_bg {
+    background-color: #3563ae;
+    color: white;
+}
 .active.brand_purple {
     border: 10px solid #a458a2;
 }
@@ -242,18 +244,7 @@ footer div.baseband {
 .chevron: hover {
     opacity: 0.8;
 }
-.chevron.prev {} .chevron.next {} .chevron img {}
-/* <!-- Carousel ======================================================================== */
-
-.wide-page {
-    width: 100%;
-    background-color: #005;
-    position: absolute;
-    left: 0;
-    right: 0;
-    max-width: none;
-}
-.nav-justified > li > a {
+.chevron.prev {} .chevron.next {} .chevron img {} .nav-justified > li > a {
     border-radius: 0px;
 }
 .nav-pills > li {
@@ -296,7 +287,7 @@ footer div.baseband {
     transform: rotate(-90deg);
     box-shadow: -4px 0px 6px 0px rgba(128, 128, 128, 0.75);
 }
-img.customer-tile {
+ximg.customer-tile {
     border: 5px solid white;
     border-radius: 5px;
     box-shadow: 0px 4px 6px 0px rgba(128, 128, 128, 0.75);
@@ -318,5 +309,21 @@ img#process-diagram {
 }
 body {
     background-color: rgba(0, 0, 0, 0.1);
-    /* background-image: url(images/bg.png);*/
+    background-image: url(images/bg.png);
+}
+.customer_logos {
+    background: white;
+    box-shadow: 0px 4px 6px 0px rgba(128, 128, 128, 0.75);
+}
+.customer_logo {
+    border: 20px solid white;
+    margin-bottom: 3%;
+}
+img.quotemarks {
+    margin-bottom: -15%;
+    opacity: 0.35;
+}
+blockquote DIV {
+    margin-left: 1%;
+    text-shadow: rgba(255, 255, 255, 0.3) 0px 3px 3px;
 }

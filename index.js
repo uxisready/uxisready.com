@@ -27,7 +27,7 @@ $(".quotes").removeClass("active").random().addClass("active");
 $("#carousel2").carousel({
    interval : 6000
 });
-
+go
 $( "#carousel2" ).on( "slid.bs.carousel", function() {
   var idx = $(".carousel-inner > DIV").index( $(".carousel-inner > DIV.active") )|| 0;
   $("ul.process-nav li").removeClass("active").eq(idx).addClass("active");

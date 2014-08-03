@@ -41,7 +41,15 @@ blockquote {
     position: relative;
     color: #383838;
     text-align: left;
+<<<<<<< HEAD
     border:none;
+=======
+    border: none;
+    /*    padding: 7%;
+    border: 10px solid rgba(153, 153, 153, 0.35);
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px 0px rgba(128, 128, 128, 0.75);*/
+>>>>>>> ffa973b068550bc67d9a121712dc5c1deba9e6e5
 }
 blockquote cite {
     color: #c66737;
@@ -203,7 +211,10 @@ footer div.baseband {
 .impact {
     font-size: 18pt;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> ffa973b068550bc67d9a121712dc5c1deba9e6e5
 .brand-purple-bg {
     background-color: #a458a2;
     color: white;
@@ -215,7 +226,10 @@ footer div.baseband {
     background-color: #3563ae;
     color: white;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> ffa973b068550bc67d9a121712dc5c1deba9e6e5
 .active.brand-purple {
     border: 10px solid #a458a2;
 }
@@ -225,7 +239,10 @@ footer div.baseband {
 .active.brand-sapphire {
     border: 10px solid #3563ae;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> ffa973b068550bc67d9a121712dc5c1deba9e6e5
 .active.brand-purple-bar {
     border-top: 10px solid #a458a2;
 }
@@ -247,6 +264,7 @@ footer div.baseband {
     margin: 0;
     border-radius: 0;
 }
+<<<<<<< HEAD
 
 .nav-pills > li.active a h3 {
     background-color: #eee;
@@ -256,13 +274,28 @@ footer div.baseband {
 }
 .customer-logos {
     background: white;
+=======
+.nav-pills > li.active a h3 {
+    background-color: #eee;
+}
+.hidden-desktop img#process-diagram {
+    margin: 3em 0;
+}
+.customer-logos {
+    background: white;
+    /*box-shadow: 0px 4px 6px 0px rgba(128, 128, 128, 0.75);*/
+>>>>>>> ffa973b068550bc67d9a121712dc5c1deba9e6e5
 }
 .customer-logo {
     border: 20px solid white;
     margin-bottom: 3%;
 }
 .customer-logo IMG {
+<<<<<<< HEAD
     width:100%;
+=======
+    width: 100%;
+>>>>>>> ffa973b068550bc67d9a121712dc5c1deba9e6e5
 }
 img.quotemarks {
     margin-bottom: -15%;
@@ -273,9 +306,17 @@ blockquote DIV {
     text-shadow: rgba(255, 255, 255, 0.3) 0px 3px 3px;
 }
 .quotes {
+<<<<<<< HEAD
     display:none;
     background: url(images/quotes.svg) top left no-repeat;
 }
 .quotes.active {
   display:block;
+=======
+    display: none;
+    background: url(images/quotes.svg) top left no-repeat;
+}
+.quotes.active {
+    display: block;
+>>>>>>> ffa973b068550bc67d9a121712dc5c1deba9e6e5
 }

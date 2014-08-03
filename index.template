@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="##1001##">
     <meta name="author" content="##1002##">
-    
+
     <!-- Open Graph protocol -->
     <meta property="og:title" content="##1000##" />
     <meta property="og:description" content="##1001##" />
@@ -20,7 +20,7 @@
     <meta property="og:url" content="http://www.uxisready.com/" />
     <meta property="og:image" content="http://www.uxisready.com/images/web_snapshot.jpg" />
     <meta property="og:image:type" content="image/jpg" />
-    
+
     <!-- Le styles -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -49,7 +49,7 @@
 <a name='top'></a>
 
 <div class="navbar navbar-fixed-top">
-    <img class='logo pull-left' src="images/web_logo.png"/> 
+    <img class='logo pull-left' src="images/web_logo.png"/>
     <div class="navbar-inner">
         <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
@@ -73,31 +73,30 @@
 </div>
 
 <div class="jumbotron bigpanel">
-    <div class="container fixed">       
+    <div class="container fixed">
         <h1>##1006##</h1>
         <h2>##1007##</h2>
     </div>
 </div>
 
-<div class="container row-fluid main_content">
-  
-  <div class="span1"></div>
-  
-  <div class="span10">   
-    
-    <a name='whatwedo'></a>
-    
-    <div class="container row-fluid whatewedo">
-      <h2>##1003##</h2>
-    </div>
+<div class="container row-fluid main-content">
 
-    <div class="container row-fluid impact_heading">
+  <div class="span1"></div>
+
+  <div class="span10">
+
+    <a name='whatwedo'></a>
+
+    <div class="container row-fluid impact-heading">
         <div class="">
             <p class='panelText impact'>##1008##</p>
         </div>
     </div>
+    <div class="container row-fluid whatewedo">
+      <h2>##1003##</h2>
+    </div>
 
-    <div class="container row-fluid three_col_topics">
+    <div class="container row-fluid three-col-topics">
         <div class="service-tiles">
           <div class="row-fluid">
             <div class='span4 tile'>
@@ -118,53 +117,38 @@
           </div>
         </div>
     </div>
-
-    <div class="container row-fluid quote_carousel">
-      <div class="chevron prev span1"><img src="images/arrow_back.svg"/></div>
-      <div id="carousel1" class="carousel slide span10">
-        <div class="carousel-inner quotes">
-          <div class="item active">
-            <div class="quotes">
-              <blockquote class="brand_purple_bg">
-                <img class="quotemarks" src="images/quotes.svg"/>
-                <div>##1025##</div>
-                <cite>##1025.1##</cite>
-              </blockquote>
-            </div>
-          </div>
-          <div class="item">
-            <div class="quotes">
-              <blockquote class="brand_mustard_bg"><img class="quotemarks" src="images/quotes.svg"/><div>##1026##</div><cite>##1026.1##</cite></blockquote>
-            </div>
-          </div>
-          <div class="item">
-            <div class="quotes">
-              <blockquote class="brand_sapphire_bg"><img class="quotemarks" src="images/quotes.svg"/><div>##1027##</div><cite>##1027.1##</cite></blockquote>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="chevron next span1"><img src="images/arrow_forward.svg"/></div>
+    <div class="quotes active">
+      <blockquote><div><h3>##1025##</h3></div><cite>##1025.1##</cite></blockquote>
+    </div>
+    <div class="quotes">
+      <blockquote><div><h3>##1026##</h3></div><cite>##1026.1##</cite></blockquote>
+    </div>
+    <div class="quotes">
+      <blockquote><div><h3>##1027##</h3></div><cite>##1027.1##</cite></blockquote>
     </div>
 
-    <div class="container row-fluid our_process">
-
-       <h2>Our Process</h2>
+    <div class="container row-fluid our-process">
        <p class="verticalspacer">&nbsp;</p>
+
+       <h2>##1017##</h2>
+       <div class="hidden-desktop hidden-tablet">
+         <img id="process-diagram" class="process-diagram circle-shadow" src="images/process.svg"/>
+       </div>
+
        <ul class="nav nav-pills nav-justified service-tiles process-nav">
-            <li data-target="#carousel2" data-slide-to="0" class="brand_purple_bar">
+            <li data-target="#carousel2" data-slide-to="0" class="brand-purple-bar active">
                 <a href="#"><h3>##1029.1##</h3></a>
             </li>
-            <li data-target="#carousel2" data-slide-to="1" class="brand_mustard_bar">
+            <li data-target="#carousel2" data-slide-to="1" class="brand-mustard-bar">
                 <a href="#"><h3>##1029.2##</h3></a>
             </li>
-            <li data-target="#carousel2" data-slide-to="2" class="brand_sapphire_bar">
+            <li data-target="#carousel2" data-slide-to="2" class="brand-sapphire-bar">
                 <a href="#"><h3>##1029.3##</h3></a>
             </li>
         </ul>
        <div id="process-carousel" class="container row-fluid process-carousel">
-        <div class="span6">
-           <div id="carousel2" class="carousel slide" data-ride="carousel">
+        <div class="span7">
+           <div id="carousel2" class="carousel slide">
           <div class="carousel-inner">
               <div class="item active">
                  <p class='panelText'>##1030## ##1029.1## ##1032##</p>
@@ -184,63 +168,52 @@
           </div>
        </div>
         </div>
-         <div class="span1 hidden-phone"></div>
-         <div class="span5">
+         <!--div class="span1 hidden-phone"></div-->
+         <div class="span5 hidden-phone">
             <img id="process-diagram" class="process-diagram circle-shadow" src="images/process.svg"/>
           </div>
        </div>
-       <div class="container row-fluid carousel-dots">
-            <div class="span2 hidden-phone"></div>
-            <div class="span8">
-              <ul class="nav nav-pills nav-justified service-tiles dots">
-                <li class="active brand_purple">&nbsp;</li>
-                <li class="brand_mustard">&nbsp;</li>
-                <li class="brand_sapphire">&nbsp;</li>
-              </ul>      
-            </div>
-            <div class="span2 hidden-phone"></div>
-         </div>
     </div>
 
     <a name='customers'></a>
 
-    <div class="container row-fluid customer_panel ">
+    <div class="container row-fluid custome-panel ">
       <h2>##1018##</h2>
       <p class="verticalspacer">&nbsp;</p>
       <p class='panelText smaller'>##1009##</p>
     </div>
-    
-    <div class="container row-fluid customer_logos">
+
+    <div class="container row-fluid customer-logos">
       <div class="row_fluid">
-        <div class='span3 customer_logo'><img src="images/logo_dinube.png" alt="Dinube"/></div>
-        <div class='span3 customer_logo'><img src="images/logo_hp.png" alt="HP"/></div>
-        <div class='span3 customer_logo'><img src="images/logo_publicis.png" alt="Publicis"/></div>
-        <div class='span3 customer_logo'><img src="images/logo_snap.png" alt="Snapfish"/></div>
+        <div class='span3 customer-logo'><img src="images/logo_dinube.png"      alt="Dinube"/></div>
+        <div class='span3 customer-logo'><img src="images/logo_hp.png"          alt="HP"/></div>
+        <div class='span3 customer-logo'><img src="images/logo_publicis.png"    alt="Publicis"/></div>
+        <div class='span3 customer-logo'><img src="images/logo_snap.png"        alt="Snapfish"/></div>
       </div>
-      <div class="hidden-phone row_fluid">
-        <div class='span3 customer_logo'><img src="images/logo_atom.png" alt="Atom Entertainment"/></div>
-        <div class='span3 customer_logo'><img src="images/logo_bofa.png" alt="Bank of America"/></div>
-        <div class='span3 customer_logo'><img src="images/logo_radaptive.png" alt="Radaptive Inc."/></div>
-        <div class='span3 customer_logo'><img src="images/logo_chron.png" alt="San Francisco Chronicle"/></div>
+      <div class="hidden-phone row-fluid">
+        <div class='span3 customer-logo'><img src="images/logo_atom.png"        alt="Atom Entertainment"/></div>
+        <div class='span3 customer-logo'><img src="images/logo_bofa.png"        alt="Bank of America"/></div>
+        <div class='span3 customer-logo'><img src="images/logo_radaptive.png"   alt="Radaptive Inc."/></div>
+        <div class='span3 customer-logo'><img src="images/logo_chron.png"       alt="San Francisco Chronicle"/></div>
       </div>
     </div>
-    
+
   </div>
-  
+
   <div class="span1"></div>
-  
+
 </div>
-  
+
 <!-- Footer ==================================================== -->
 <footer class="footer">
-  
+
   <div class="container contactbox">
-    
+
     <div class="row-fluid">
 
       <div class='span6'><img class="uxisready" src="images/logo_uxisready.svg" /></div>
       <div class='span6'>
-        <h2>##1019##</h2>  
+        <h2>##1019##</h2>
         <h2>
           <a class="" href='https://twitter.com/uxisready'><img id='icon-twitter' class="contact-icon" src="images/icon_twitter.svg"/></a>
           <a class="" href='mailto:hello%40uxisready.com?subject=Hello!'><img id='icon-email' class="contact-icon" src="images/icon_email.svg"/></a>
@@ -274,7 +247,7 @@
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="bootstrap/js/holder/holder.js"></script>
 <script src="index.js"></script>
-                                             
+
 <!-- Analytics ================================================== -->
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

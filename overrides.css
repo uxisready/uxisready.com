@@ -9,7 +9,7 @@ h4,
 h5,
 h6 {
     font-family: "open sans", sans-serif;
-    font-weight: 800;
+    font-weight: 600;
     text-shadow: rgba(255, 255, 255, 0.3) 0px 3px 3px;
 }
 h1 {
@@ -19,6 +19,7 @@ h2 {
     color: #c66737;
     text-align: center;
     font-size: 24pt;
+    padding-top: 5%;
 }
 p {
     font-family: "open sans", sans-serif;
@@ -33,17 +34,14 @@ p.panelText .icon {
     margin-right: 10px;
 }
 blockquote {
-    font-size: 24pt;
+    font-size: 1.3em;
     font-style: italic;
     margin: 0.25em 0;
     line-height: 1.45;
     position: relative;
     color: #383838;
     text-align: left;
-    padding: 7%;
-    border: 10px solid rgba(153, 153, 153, 0.35);
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px 0px rgba(128, 128, 128, 0.75);
+    border:none;
 }
 blockquote cite {
     color: #c66737;
@@ -67,7 +65,7 @@ footer div.baseband {
 }
 .container {
     max-width: 1024px;
-    margin-top: 20px;
+    margin-top: 0.5em;
 }
 .navbar-wrapper {
     position: absolute;
@@ -110,9 +108,7 @@ footer div.baseband {
 }
 .bigpanel h1,
 .bigpanel h2 {
-    text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.6)
-    /*,0 -5px 35px rgba(255, 255, 255, 0.8), -.01em .01em 0 #cc6633, -.02em .02em 0 #e69064, -.03em .03em 0 #e6a787, -.04em .04em 0 #853811*/
-    ;
+    text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.6);
 }
 .service-tiles p.panelText {
     line-height: 1.8;
@@ -207,45 +203,37 @@ footer div.baseband {
 .impact {
     font-size: 18pt;
 }
-.brand_purple_bg {
+
+.brand-purple-bg {
     background-color: #a458a2;
     color: white;
 }
-.brand_mustard_bg {
+.brand-mustard-bg {
     background-color: #e2da4b;
 }
-.brand_sapphire_bg {
+.brand-sapphire-bg {
     background-color: #3563ae;
     color: white;
 }
-.active.brand_purple {
+
+.active.brand-purple {
     border: 10px solid #a458a2;
 }
-.active.brand_mustard {
+.active.brand-mustard {
     border: 10px solid #e2da4b;
 }
-.active.brand_sapphire {
+.active.brand-sapphire {
     border: 10px solid #3563ae;
 }
-.active.brand_purple_bar {
+
+.active.brand-purple-bar {
     border-top: 10px solid #a458a2;
 }
-.active.brand_mustard_bar {
+.active.brand-mustard-bar {
     border-top: 10px solid #e2da4b;
 }
-.active.brand_sapphire_bar {
+.active.brand-sapphire-bar {
     border-top: 10px solid #3563ae;
-}
-.chevron {
-    cursor: pointer;
-    height: 0;
-    opacity: 0.3;
-}
-.chevron: hover {
-    opacity: 0.8;
-}
-.chevron.prev {} .chevron.next {} .chevron img {} .nav-justified > li > a {
-    border-radius: 0px;
 }
 .nav-pills > li {
     font-size: 14pt;
@@ -257,67 +245,24 @@ footer div.baseband {
 .nav-pills > li a {
     padding: 0;
     margin: 0;
+    border-radius: 0;
 }
-.nav-pills>.active>a,
-.nav-pills>.active>a: hover, .nav-pills>.active>a: focus {
-    background-color: transparent;
-}
+
 .nav-pills > li.active a h3 {
-    background-color: transparent;
-    color: black;
-    font-size: 18pt;
+    background-color: #eee;
 }
-.rotate-deg0 {
-    transition: 4s ease-in-out;
-    transform: rotate(0deg);
-    box-shadow: 0px 4px 6px 0px rgba(128, 128, 128, 0.75);
+.hidden-desktop img#process-diagram {
+    margin: 3em 0;
 }
-.rotate-deg90 {
-    transition: 4s ease-in-out;
-    transform: rotate(90deg);
-    box-shadow: 4px 0px 6px 0px rgba(128, 128, 128, 0.75);
-}
-.rotate-deg180 {
-    transition: 4s ease-in-out;
-    transform: rotate(180deg);
-    box-shadow: 4px -4px 6px 0px rgba(128, 128, 128, 0.75);
-}
-.rotate-deg270 {
-    transition: 4s ease-in-out;
-    transform: rotate(-90deg);
-    box-shadow: -4px 0px 6px 0px rgba(128, 128, 128, 0.75);
-}
-ximg.customer-tile {
-    border: 5px solid white;
-    border-radius: 5px;
-    box-shadow: 0px 4px 6px 0px rgba(128, 128, 128, 0.75);
-}
-.dots {
-    margin-left: auto;
-    margin-right: auto;
-}
-.dots li {
-    border: 10px solid rgba(0, 0, 0, 0.1);
-    height: 0.3em;
-    width: 0.3em;
-    float: left;
-    border-radius: 50%;
-    margin: 0 15px;
-}
-img#process-diagram {
-    padding: 5px;
-}
-body {
-    background-color: rgba(0, 0, 0, 0.1);
-    background-image: url(images/bg.png);
-}
-.customer_logos {
+.customer-logos {
     background: white;
-    box-shadow: 0px 4px 6px 0px rgba(128, 128, 128, 0.75);
 }
-.customer_logo {
+.customer-logo {
     border: 20px solid white;
     margin-bottom: 3%;
+}
+.customer-logo IMG {
+    width:100%;
 }
 img.quotemarks {
     margin-bottom: -15%;
@@ -326,4 +271,11 @@ img.quotemarks {
 blockquote DIV {
     margin-left: 1%;
     text-shadow: rgba(255, 255, 255, 0.3) 0px 3px 3px;
+}
+.quotes {
+    display:none;
+    background: url(images/quotes.svg) top left no-repeat;
+}
+.quotes.active {
+  display:block;
 }

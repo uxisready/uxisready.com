@@ -131,7 +131,7 @@
        <p class="verticalspacer">&nbsp;</p>
 
        <h2>##1017##</h2>
-       <div class="hidden-desktop hidden-tablet">
+       <div class="hidden-desktop hidden-tablet diagram-container">
          <img id="process-diagram" class="process-diagram circle-shadow" src="images/process.svg"/>
        </div>
 
@@ -147,29 +147,28 @@
             </li>
         </ul>
        <div id="process-carousel" class="container row-fluid process-carousel">
-        <div class="span7">
+         <div class="span7">
            <div id="carousel2" class="carousel slide">
-          <div class="carousel-inner">
+           <div class="carousel-inner">
               <div class="item active">
-                 <p class='panelText'>##1030## ##1029.1## ##1032##</p>
+                 <p class='panelText'>##1030.1##</p>
                  <h5>##1033##</h5>
                  <p class='panelText method-list'>##1034##</p>
               </div>
               <div class="item">
-                 <p class='panelText'>##1035## ##1029.2## ##1037##</p>
+                 <p class='panelText'>##1035.1##</p>
                  <h5>##1033##</h5>
                  <p class='panelText method-list'>##1038##</p>
               </div>
               <div class="item">
-                 <p class='panelText'>##1039## ##1029.3## ##1041##</p>
+                 <p class='panelText'>##1039.1##</p>
                  <h5>##1033##</h5>
                  <p class='panelText method-list'>##1042##</p>
               </div>
           </div>
        </div>
         </div>
-         <!--div class="span1 hidden-phone"></div-->
-         <div class="span5 hidden-phone">
+         <div class="span5 hidden-phone diagram-container">
             <img id="process-diagram" class="process-diagram circle-shadow" src="images/process.svg"/>
           </div>
        </div>
@@ -177,9 +176,8 @@
 
     <a name='customers'></a>
 
-    <div class="container row-fluid custome-panel ">
+    <div class="container row-fluid customer-panel ">
       <h2>##1018##</h2>
-      <p class="verticalspacer">&nbsp;</p>
       <p class='panelText smaller'>##1009##</p>
     </div>
 
@@ -214,6 +212,7 @@
       <div class='span6'><img class="uxisready" src="images/logo_uxisready.svg" /></div>
       <div class='span6'>
         <h2>##1019##</h2>
+        <p class="vertical-spacer">&nbsp;</p>
         <h2>
           <a class="" href='https://twitter.com/uxisready'><img id='icon-twitter' class="contact-icon" src="images/icon_twitter.svg"/></a>
           <a class="" href='mailto:hello%40uxisready.com?subject=Hello!'><img id='icon-email' class="contact-icon" src="images/icon_email.svg"/></a>

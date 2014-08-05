@@ -169,6 +169,7 @@ footer div.baseband {
 }
 .footer-links {
     font-size: 10pt;
+    margin: 5px 0;
 }
 .process-page h5 {
     font-weight: 600;
@@ -247,6 +248,9 @@ footer div.baseband {
 .nav-pills > li.active a h3 {
     background-color: #eee;
 }
+.diagram-container {
+  padding:2%;
+}
 .hidden-desktop img#process-diagram {
     margin: 3em 0;
 }
@@ -274,4 +278,7 @@ blockquote DIV {
 }
 .quotes.active {
     display: block;
+}
+p.vertical-spacer {
+  margin:0;
 }

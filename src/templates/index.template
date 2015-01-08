@@ -1,0 +1,399 @@
+<!DOCTYPE HTML>
+<!--
+  Twenty by HTML5 UP
+  html5up.net | @n33co
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+
+<html lang="##language##" class="##language##">
+
+  <head>
+    <script>
+          var rg = new RegExp(/^es.*$/g); // TODO needs support for the other languages
+          if (rg.test(navigator.language)) {
+              window.location="index.es.html";
+          }
+    </script>
+
+      <title>##1000.1##</title>
+
+      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      <meta name="viewport"           content="width=device-width, initial-scale=1.0">
+
+      <meta name="description"        content="##1000.2##">
+      <meta name="author"             content="##1000.3##">
+      <meta name="keywords"           content="##1000.4##" />
+
+      <!-- Google Authorship and Publisher Markup -->
+      <link rel="author"    href="https://plus.google.com/[Google+_Profile]/posts"/>
+      <link rel="publisher" href="https://plus.google.com/[Google+_Page_Profile]"/>
+
+      <!-- Schema.org markup for Google+ http://www.google.com/webmasters/tools/richsnippets-->
+      <meta itemprop="name" content="##1000.1##">
+      <meta itemprop="description" content="##1000.2##">
+      <meta itemprop="image" content="http://www.uxisready.com/images/web_snapshot.jpg">
+
+      <!-- Twitter Card data https://dev.twitter.com/docs/cards/validation/validator -->
+      <meta name="twitter:card"        content="summary">
+      <meta name="twitter:site"        content="@uxisready">
+      <meta name="twitter:title"       content="##1000.1##">
+      <meta name="twitter:description" content="##1000.2##">
+      <meta name="twitter:creator"     content="@uxisready">
+      <meta name="twitter:image"       content="http://www.uxisready.com/images/web_snapshot.jpg">     <!-- Twitter Summary card images must be at least 200x200px -->
+
+      <!-- Open Graph protocol -->
+      <meta property="og:title"       content="##1000.1##"                                         >
+      <meta property="og:description" content="##1000.2##"                                         >
+      <meta property="og:type"        content="website"                                          >
+      <meta property="og:url"         content="http://www.uxisready.com/"                        >
+      <meta property="og:image"       content="http://www.uxisready.com/images/web_snapshot.jpg" >
+      <meta property="og:image:type"  content="image/jpg"                                        >
+
+      <link rel="stylesheet"        href="css/screen.css" />
+
+      <noscript>
+        <link rel="stylesheet"        href="css/skel.css" />
+        <link rel="stylesheet"        href="css/style.css" />
+        <link rel="stylesheet"        href="css/style-wide.css" />
+        <link rel="stylesheet"        href="css/style-noscript.css" />
+      </noscript>
+
+      <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+      <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+      <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+
+      <script src="js/jquery.min.js"></script>
+
+      <script src="js/libs/jquery.dropotron.min.js"></script>
+      <script src="js/libs/jquery.scrolly.min.js"></script>
+      <script src="js/libs/jquery.scrollgress.min.js"></script>
+
+      <script src="js/libs/skel.min.js"></script>
+      <script src="js/libs/skel-layers.min.js"></script>
+
+      <script src="js/init.js"></script>
+
+  </head>
+
+  <body class="index">
+
+  <!-- Header -->
+  <header id="header" class="">
+
+    <h1 id="logo">
+      <a href="index.html">
+        <div class="logo-wrapper">
+          <img class="logo" src="images/web_logo.png">
+        </div>
+      </a>
+    </h1>
+
+    <nav id="nav">
+      <ul>
+        <li class="current">
+          <a href="#top">##1003##</a>
+        </li>
+        <li><a href="#clients">##1004##</a></li>
+        <li><a href="#contact">##1005##</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <a name="top"></a>
+
+  <section id="banner">
+
+    <!--
+      ".inner" is set up as an inline-block so it automatically expands
+      in both directions to fit whatever's inside it. This means it won't
+      automatically wrap lines, so be sure to use line breaks where
+      appropriate (<br />).
+    -->
+
+    <div class="inner">
+
+      <header>
+        <h1 id="banner-headline" class="fit-text">##1006##</h1>
+        <h2 class="fit-text-66">##1007##</h2>
+      </header>
+
+    </div>
+
+  </section>
+
+  <!-- Main -->
+    <article id="main">
+
+      <header class="special container impact">##1008##</header>
+
+      <!-- One -->
+      <section class="wrapper style2 container special">
+          <div class="turban">
+            <header></header>
+            <div class="row">
+              <div class="4u">
+                <section>
+                  <span><img class="circle-shadow" src="images/graphic_design.svg"></span>
+                  <header>
+                    <h3 class="service-title">##1011##</h3>
+                  </header>
+                  <p class="panelText">##1012##</p>
+                </section>
+              </div>
+              <div class="4u">
+                <section>
+                  <span><img class="circle-shadow" src="images/graphic_testing.svg"></span>
+                  <header>
+                    <h3 class="service-title">##1013##</h3>
+                  </header>
+                  <p class="panelText">##1014##</p>
+                </section>
+              </div>
+              <div class="4u">
+                <section>
+                  <span><img class="circle-shadow" src="images/graphic_training.svg"></span>
+                  <header>
+                    <h3 class="service-title">##1015##</h3>
+                  </header>
+                  <p class="panelText">##1016##</p>
+                </section>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <!-- Two -->
+      <section class="wrapper container quotebox">
+          <div class="row half">
+            <div class="quotes active">
+              <blockquote><div><h3 class="fit-text">##1025##</h3></div><cite>##1025.1##</cite></blockquote>
+            </div>
+            <div class="quotes">
+              <blockquote><div><h3 class="fit-text">##1026##</h3></div><cite>##1026.1##</cite></blockquote>
+            </div>
+            <div class="quotes">
+              <blockquote><div><h3 class="fit-text">##1027##</h3></div><cite>##1027.1##</cite></blockquote>
+            </div>
+            <div class="quotes">
+              <blockquote><div><h3 class="fit-text">##1028##</h3></div><cite>##1028.1##</cite></blockquote>
+            </div>
+          </div>
+      </section>
+
+      <!-- Three -->
+      <section class="wrapper style2 container special">
+
+        <div class="our-process">
+
+          <header>
+
+            <h2 class="section-title">##1017##</h2>
+
+          <div class="diagram-container show-narrow">
+            <img id="process-diagram" class="process-diagram circle-shadow" src="images/process.svg">
+          </div>
+
+            <div id="DIV">
+
+              <ul class="nav nav-pills nav-justified service-tiles process-nav">
+
+                <li data-target="#carousel2" data-slide-to="0" class="brand-purple-bar active u4">
+                  <a href="#"><h3>##1029.1##</h3></a>
+                </li>
+
+                <li data-target="#carousel2" data-slide-to="1" class="brand-mustard-bar u4">
+                  <a href="#"><h3>##1029.2##</h3></a>
+                </li>
+
+                <li data-target="#carousel2" data-slide-to="2" class="brand-sapphire-bar u4">
+                  <a href="#"><h3>##1029.3##</h3></a>
+                </li>
+
+              </ul>
+
+            </div>
+
+          </header>
+
+          <div id="process-carousel" class="row process-carousel">
+
+            <div class="7u">
+
+              <div id="carousel2" class="carousel slide">
+
+                <div class="_carousel-inner">
+
+                  <div class="item active">
+                     <p class="panelText">##1030.1##</p>
+                     <h5>##1033##</h5>
+                     <p class="panelText method-list">##1034##</p>
+                  </div>
+
+                  <div class="item">
+                     <p class="panelText">##1035.1##</p>
+                     <h5>##1033##</h5>
+                     <p class="panelText method-list">##1038##</p>
+                  </div>
+
+                  <div class="item">
+                     <p class="panelText">##1039.1##</p>
+                     <h5>##1033##</h5>
+                     <p class="panelText method-list">##1042##</p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="5u diagram-container hide-narrow">
+                <img id="process-diagram" class="process-diagram circle-shadow" src="images/process.svg">
+            </div>
+
+          </div>
+
+        </div>
+    <a name="clients"></a>
+      </section>
+
+
+    <section class="wrapper style3 container special">
+
+
+      <header class="major">
+        <h2 class="section-title">##1018##</h2>
+        <p>##1009##</p>
+      </header>
+
+      <div class="row clients">
+
+        <div class="3u">
+
+          <section>
+            <a href="#"><img src="images/logo_dinube.png" alt="Dinube"/></a>
+          </section>
+
+        </div>
+        <div class="3u">
+
+          <section>
+            <a href="#"><img src="images/logo_hp.png" alt="Hewlett Packard"/></a>
+          </section>
+
+        </div>
+        <div class="3u">
+
+          <section>
+            <a href="#"><img src="images/logo_publicis.png" alt="Publicis" /></a>
+          </section>
+
+        </div>
+
+        <div class="3u">
+          <section>
+            <a href="#"><img src="images/logo_chron.png" alt="San Francisco Chronicle"/></a>
+          </section>
+        </div>
+      </div>
+
+      <div class="row clients hide-narrow">
+
+        <div class="3u">
+          <section>
+            <a href="#"><img src="images/logo_atom.png" alt="Atom Media"/></a>
+          </section>
+        </div>
+
+        <div class="3u">
+          <section>
+            <a href="#"><img src="images/logo_radaptive.png" alt="Radaptive Inc." /></a>
+          </section>
+        </div>
+
+        <div class="3u">
+          <section>
+            <a href="#"><img src="images/logo_bofa.png" alt="Bank of America"/></a>
+          </section>
+        </div>
+
+        <div class="3u">
+          <section>
+            <a href="#"><img src="images/logo_snap.png" alt="Snapfish" /></a>
+          </section>
+        </div>
+
+      </div>
+
+      <footer class="major">
+      </footer>
+      <a name="contact"></a>
+          </section>
+
+
+  <!-- CTA -->
+    <section id="cta">
+
+      <header></header>
+
+      <div class="row">
+
+        <div class="5u">
+          <img class="uxisready" src="images/logo_uxisready.svg">
+        </div>
+
+        <div class="7u">
+          <h2 class=>##1019##</h2>
+
+          <ul class="icons">
+
+            <li>
+              <p class="triangle-isosceles">
+                <a href="mailto:hello%40uxisready.com?subject=Hello!" class="icon circle">
+                  <span class="social-label pull-right"></span>
+                  <span class="fa-stack">
+                    <i class="fa fa-circle fa-stack-4x pull-left"></i>
+                    <i class="fa fa-envelope fa-stack-2x fa-inverse pull-left"></i>
+                  </span>
+                </a>
+              </p>
+
+            </li>
+            <li>
+              <p class="triangle-isosceles">
+                <a href="https://twitter.com/@uxisready#" class="icon circle">
+                  <span class="social-label pull-right"></span>
+                  <span class="fa-stack">
+                    <i class="fa fa-circle fa-stack-4x pull-left"></i>
+                    <i class="fa fa-twitter fa-stack-2x fa-inverse pull-left"></i>
+                  </span>
+                </a>
+                </p>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+      <footer>
+      </footer>
+    </section>
+  </article>
+
+  <!-- Footer -->
+    <footer id="footer">
+        <ul class="footer-links">
+               <li><a class="fr" href="index.fr.html">##1021.4##</a></li>
+               <li><a class="it" href="index.it.html">##1021.3##</a></li>
+               <li><a class="es" href="index.es.html">##1021.1##</a></li>
+               <li><a class="en" href="index.html">##1021.2##</a></li>
+              <li class="copyright" style="white-space: nowrap">##1023##</li>
+              <li class="muted">&middot;</li>
+              <li class="copyright">##1024##</li>
+          </ul>
+    </footer>
+
+  <script src="js/index.js"></script>
+
+</body></html>

@@ -11,7 +11,7 @@
 
       execute: {
         target: {
-          src: [ "build/build.js" ]
+          src: [ "build.js" ]
         }
       },
       banner: "/* Author: uxisready.com , <%= grunt.template.today(\"yyyy\") %> */\n",

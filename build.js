@@ -24,7 +24,7 @@ request = https.request( options, function( res ) {
   } );
 
   res.on( "end", function() {
-    var filename = base + "/translations.js",
+    var filename = base + "translations.js",
          mydata  = data.split( "\n" );
 
     for ( var row in mydata ) {

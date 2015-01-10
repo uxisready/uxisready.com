@@ -39,12 +39,12 @@
             "src/tmp/css/style-narrower.css" : "src/stylus/style-narrower.styl",
             "src/tmp/css/style-mobile.css"   : "src/stylus/style-mobile.styl",
 
+            "src/tmp/css/print.css"          : "src/stylus/print.styl",
+            "src/tmp/css/screen.css"         : "src/stylus/screen.styl",
+
             "src/tmp/css/style-ie.css"       : "src/stylus/style-ie.styl",
             "src/tmp/css/ie/v8.css"          : "src/stylus/ie/v8.styl",
-            "src/tmp/css/ie/v9.css"          : "src/stylus/ie/v9.styl",
-
-            "src/tmp/css/print.css"          : "src/stylus/print.styl",
-            "src/tmp/css/screen.css"         : "src/stylus/screen.styl"
+            "src/tmp/css/ie/v9.css"          : "src/stylus/ie/v9.styl"
 
             //"path/to/another.css": ["path/to/sources/*.styl", "path/to/more/*.styl"] // compile and concat into single file
           }

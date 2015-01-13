@@ -98,7 +98,7 @@ $pattern-background-size= 25em
 
   blockquote
     position: relative
-    color       : $color-uxisready-grey-light
+    color       : $color-uxisready-white
     font-style  : italic
     font-size   : 1.3em
     margin      : 0
@@ -107,10 +107,19 @@ $pattern-background-size= 25em
     text-align  : right
     border      : none
 
+    h3
+      color     : $color-uxisready-white
+
+      .dblequote
+        font-family: font-awesome
+        font-size: 2em;
+        line-height: 1.2em;
+
     cite
-      color       : $color-uxisready-white
+      color       : $color-uxisready-grey-dark
       display     : block
       text-align  : right
+      font-weight  : 800
 
     div
       font-weight  : 800
@@ -121,7 +130,6 @@ $pattern-background-size= 25em
 
   .quotes
     display    : none
-    background : url(../images/quotes.svg) top left no-repeat
     min-height : 100px;
 
   .quotes.active
@@ -1022,7 +1030,7 @@ DIV border : red 1px solid;
 
 .row
   &.half
-    padding: 1em 2em
+    padding: 4em 0.5em
 
     h3
       font-size : 0.8em

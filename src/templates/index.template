@@ -50,6 +50,7 @@
       <meta property="og:image:type"  content="image/jpg"                                        >
 
       <link rel="stylesheet"        href="css/screen.css" />
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
       <noscript>
         <link rel="stylesheet"        href="css/skel.css" />
@@ -348,7 +349,6 @@
           <h2 class=>##1019##</h2>
 
           <ul class="icons">
-
             <li>
               <p class="triangle-isosceles">
                 <a href="mailto:hello%40uxisready.com?subject=Hello!" class="icon circle">
@@ -359,7 +359,6 @@
                   </span>
                 </a>
               </p>
-
             </li>
             <li>
               <p class="triangle-isosceles">

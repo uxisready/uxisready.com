@@ -1,110 +1,114 @@
-"use strict";
+(function($) {
 
-$.fn.fitText = function( kompressor, options ) {
+  "use strict";
 
-  var compressor = kompressor || 1,
-    settings = $.extend( {
-      "minFontSize": parseFloat( Number.NEGATIVE_INFINITY ),
-      "maxFontSize": parseFloat( Number.POSITIVE_INFINITY )
-    }, options );
+  $.fn.fitText = function( kompressor, options ) {
 
-  return this.each( function() {
+    var compressor = kompressor || 1,
+      settings = $.extend( {
+        "minFontSize": parseFloat( Number.NEGATIVE_INFINITY ),
+        "maxFontSize": parseFloat( Number.POSITIVE_INFINITY )
+      }, options );
 
-    var $this = $( this );
+    return this.each( function() {
 
-    // Resizer() resizes items based on the object width divided by the compressor * 10
-    var resizer = function() {
-      $this.css( "font-size", Math.max( Math.min( $this.width() / ( compressor * 10 ), settings.maxFontSize ), settings.minFontSize ) );
-    };
+      var $this = $( this );
 
-    $( window )
-      .on( "resize.fittext orientationchange.fittext", resizer )
-      .trigger( "resize.fittext" );
+      // Resizer() resizes items based on the object width divided by the compressor * 10
+      var resizer = function() {
+        $this.css( "font-size", Math.max( Math.min( $this.width() / ( compressor * 10 ), settings.maxFontSize ), settings.minFontSize ) );
+      };
 
-  } );
+      $( window )
+        .on( "resize.fittext orientationchange.fittext", resizer )
+        .trigger( "resize.fittext" );
 
-};
+    } );
 
-$.fn.random = function() {
-  return $( this[ Math.floor( Math.random() * this.length ) ] );
-};
+  };
 
-$.fn.equalHeights = function( pad ) {
+  $.fn.random = function() {
+    return $( this[ Math.floor( Math.random() * this.length ) ] );
+  };
 
-  var maxHeight = 0;
+  $.fn.equalHeights = function( pad ) {
 
-  $( this )
-    .height( "auto" )
-    .each( function() {
-      if ( $( this ).outerHeight() > maxHeight ) {
-        maxHeight = $( this ).outerHeight();
-      }
-    } )
-    .height( 0 + maxHeight + ( pad || 20 ) );
+    var maxHeight = 0;
 
-  return this;
+    $( this )
+      .height( "auto" )
+      .each( function() {
+        if ( $( this ).outerHeight() > maxHeight ) {
+          maxHeight = $( this ).outerHeight();
+        }
+      } )
+      .height( 0 + maxHeight + ( pad || 20 ) );
 
-};
+    return this;
 
-function stepCarousel() {
-  $( ".process-nav li" ).removeClass( "active" ).random().addClass( "active" );
-  var content = ( ".process-nav li" );
-  return content;
-}
+  };
 
-function startCarousel() {
-  return setInterval( stepCarousel, 500 );
-}
+  function stepCarousel() {
+    $( ".process-nav li" ).removeClass( "active" ).random().addClass( "active" );
+    var content = ( ".process-nav li" );
+    return content;
+  }
 
-function stopCarousel( nIntervId ) {
-  clearInterval( nIntervId );
-}
+  function startCarousel() {
+    return setInterval( stepCarousel, 500 );
+  }
 
-var initialize = function() {
+  function stopCarousel( nIntervId ) {
+    clearInterval( nIntervId );
+  }
 
-  $( "HTML" ).show();
+  var initialize = function() {
 
-  $( window ).on( "resize", function() {
-    $( ".carousel-inner > DIV" ).equalHeights();
-    $( ".quotes" ).equalHeights();
-  } ).resize();
+    $( "HTML" ).show();
 
-  $( ".fit-text" ).fitText( 0.8, {
-    minFontSize: "20px",
-    maxFontSize: "40px"
-  } );
+    $( window ).on( "resize", function() {
+      $( ".carousel-inner > DIV" ).equalHeights();
+      $( ".quotes" ).equalHeights();
+    } ).resize();
 
-  $( ".fit-text-66" ).fitText( 2, {
-    maxFontSize: "60px"
-  } );
+    $( ".fit-text" ).fitText( 0.8, {
+      minFontSize: "20px",
+      maxFontSize: "40px"
+    } );
 
-  $( ".quotes" ).removeClass( "active" ).random().addClass( "active" );
+    $( ".fit-text-66" ).fitText( 2, {
+      maxFontSize: "60px"
+    } );
 
-  $( ".process-nav li" ).click( function( e ) {
+    $( ".quotes" ).removeClass( "active" ).random().addClass( "active" );
 
-    /* Act on the event */
-    e.preventDefault();
+    $( ".process-nav li" ).click( function( e ) {
 
-    var selectedTab = $( this );
-    var content = $( "#carousel2 .item" );
-    var target = parseInt( selectedTab.attr( "data-slide-to" ) );
+      /* Act on the event */
+      e.preventDefault();
 
-    selectedTab.siblings().removeClass( "active" );
-    selectedTab.addClass( "active" );
+      var selectedTab = $( this );
+      var content = $( "#carousel2 .item" );
+      var target = parseInt( selectedTab.attr( "data-slide-to" ) );
 
-    content.removeClass( "active" ).eq( target ).addClass( "active" );
+      selectedTab.siblings().removeClass( "active" );
+      selectedTab.addClass( "active" );
 
-  } );
+      content.removeClass( "active" ).eq( target ).addClass( "active" );
 
-  //
-  //TODO add timer function
-  //TODO enable quote carousel
-  //
+    } );
 
-};
+    //
+    //TODO add timer function
+    //TODO enable quote carousel
+    //
 
-$( "HTML" ).hide();
-$( initialize );
+  };
+
+  $( "HTML" ).hide();
+  $( initialize );
+
+})(jQuery);
 
 <!-- Analytics ============================================================= -->
 ( function( i, s, o, g, r, a, m ) {

@@ -62,17 +62,18 @@
       <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
       <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
 
-      <script src="js/libs/jquery.bundle.min.js"></script>
+      <!--script src="js/libs/jquery.bundle.min.js"></script>
 
-      <!--script src="js/libs/jquery.dropotron.min.js"></script>
+      <script src="js/libs/jquery.dropotron.min.js"></script>
       <script src="js/libs/jquery.scrolly.min.js"></script>
-      <script src="js/libs/jquery.scrollgress.min.js"></script-->
+      <script src="js/libs/jquery.scrollgress.min.js"></script>
 
       <script src="js/libs/skel.min.js"></script>
       <script src="js/libs/skel-layers.min.js"></script>
 
-      <script src="js/init.js"></script>
+      <script src="js/init.js"></script-->
 
+      <script src="ux-is-ready.js"></script>
   </head>
 
   <body class="index">
@@ -393,7 +394,4 @@
               <li class="copyright">##1024##</li>
           </ul>
     </footer>
-
-  <script src="js/index.js"></script>
-
 </body></html>

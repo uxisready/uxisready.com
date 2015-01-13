@@ -84,8 +84,9 @@
       copy: {
         main: {
           files: [
+            { expand: true,  cwd: "src/tmp/concat",  src: "<%= pkg.name %>.js",  dest: "www/" },
             { expand: true,  cwd: "src/tmp/",  src: ["*.html","css/**"],  dest: "www/" },
-            { expand: true,  cwd: "src/",      src: ["fonts/**", "images/**", "js/**", "css/**" ],  dest: "www/" }
+            { expand: true,  cwd: "src/",      src: ["fonts/**", "images/**", "css/**" ],  dest: "www/" }
           ]
         }
       },
@@ -97,7 +98,7 @@
         },
         deploy: {
           files: {
-            "src/tmp/concat/<%= pkg.name %>.js": ["src/js/jquery.min.js","src/js/libs/*.js", "src/js/init.js", "src/js/skel*.js", "src/js/index.js"]
+            "src/tmp/concat/<%= pkg.name %>.js": ["src/js/libs/jquery.bundle.min.js", "src/js/libs/skel.min.js",  "src/js/libs/skel-layers.min.js", "src/js/init.js",  "src/js/index.js"]
            },
           nonull:true
         }
@@ -116,7 +117,7 @@
         },
         dist: {
           files: {
-            "src/tmp/min/<%= pkg.name %>.min.js": ["src/tmp/concat/*.js"]
+            "src/tmp/<%= pkg.name %>.min.js": "src/tmp/concat/<%= pkg.name %>.js"
           }
         }
       },
@@ -158,7 +159,7 @@
 
     grunt.registerTask( "debug"    , [ "generate", "lint" ] );
     grunt.registerTask( "quick"    , [ "stylus", "jsbeautifier" ] );
-    grunt.registerTask( "minimize" , [ "cssmin", "concat" ] );
+    grunt.registerTask( "minimize" , [ "cssmin", "concat:deploy" ] );
 
     grunt.registerTask( "deploy"   , [ "" ] );
 

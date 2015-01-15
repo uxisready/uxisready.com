@@ -4,7 +4,6 @@
   html5up.net | @n33co
   Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-
 <html lang="##language##" class="##language##">
 
   <head>
@@ -62,17 +61,6 @@
       <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
       <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
       <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-
-      <!--script src="js/libs/jquery.bundle.min.js"></script>
-
-      <script src="js/libs/jquery.dropotron.min.js"></script>
-      <script src="js/libs/jquery.scrolly.min.js"></script>
-      <script src="js/libs/jquery.scrollgress.min.js"></script>
-
-      <script src="js/libs/skel.min.js"></script>
-      <script src="js/libs/skel-layers.min.js"></script>
-
-      <script src="js/init.js"></script-->
 
       <script src="ux-is-ready.js"></script>
   </head>
@@ -169,16 +157,16 @@
       <section class="wrapper container quotebox">
           <div class="row half">
             <div class="quotes active">
-              <blockquote><div><h3 class="fit-text"><span class="dblequote">&ldquo;</span> ##1025##<span class="dblequote">&rdquo;</span></h3></div><cite>##1025.1##</cite></blockquote>
+              <blockquote><div><h3><span class="dblequote">&ldquo;</span>##1025##<span class="dblequote">&rdquo;</span></h3></div><cite>##1025.1##</cite></blockquote>
             </div>
             <div class="quotes">
-              <blockquote><div><h3 class="fit-text"><span class="dblequote">&ldquo;</span>##1026##<span class="dblequote">&rdquo;</span></h3></div><cite>##1026.1##</cite></blockquote>
+              <blockquote><div><h3><span class="dblequote">&ldquo;</span>##1026##<span class="dblequote">&rdquo;</span></h3></div><cite>##1026.1##</cite></blockquote>
             </div>
             <div class="quotes">
-              <blockquote><div><h3 class="fit-text"><span class="dblequote">&ldquo;</span> ##1027##<span class="dblequote">&rdquo;</span></h3></div><cite>##1027.1##</cite></blockquote>
+              <blockquote><div><h3><span class="dblequote">&ldquo;</span> ##1027##<span class="dblequote">&rdquo;</span></h3></div><cite>##1027.1##</cite></blockquote>
             </div>
             <div class="quotes">
-              <blockquote><div><h3 class="fit-text"><span class="dblequote">&ldquo;</span> ##1028##<span class="dblequote">&rdquo;</span></h3></div><cite>##1028.1##</cite></blockquote>
+              <blockquote><div><h3><span class="dblequote">&ldquo;</span> ##1028##<span class="dblequote">&rdquo;</span></h3></div><cite>##1028.1##</cite></blockquote>
             </div>
           </div>
       </section>

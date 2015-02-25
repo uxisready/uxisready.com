@@ -33,7 +33,7 @@
 
   $.fn.equalHeights = function( pad ) {
 
-    var maxHeight = 100;
+    var maxHeight = 0;
     $( this )
       .height( "auto" )
       .each( function() {
@@ -42,9 +42,7 @@
         }
       } )
       .height( 0 + maxHeight + ( pad || 20 ) );
-
     return this;
-
   };
 
   function stepCarousel() {
@@ -65,10 +63,10 @@
 
     $( "HTML" ).show();
 
-    $( window ).on( "resize", function() {
-      $( ".carousel-inner > DIV" ).equalHeights();
-      $( ".quotes" ).equalHeights();
-    });
+    //$( window ).on( "resize", function() {
+    //  $( ".carousel-inner > DIV" ).equalHeights();
+    //  $( ".quotes" ).equalHeights();
+    //});
 
     $( ".fit-text" ).fitText( 0.8, {
       minFontSize: "20px",
@@ -96,17 +94,11 @@
       content.removeClass( "active" ).eq( target ).addClass( "active" );
 
     } );
-
-    //
-    //TODO add timer function
-    //TODO enable quote carousel
-    //
-
   };
 
   $( "HTML" ).hide();
   $( initialize );
-  $( window ).trigger('resize');
+  //$( window ).trigger('resize');
 
 })(jQuery);
 

@@ -7,13 +7,6 @@
 <html lang="##language##" class="##language##">
 
   <head>
-    <script>
-    //      var rg = new RegExp(/^es.*$/g); // TODO needs support for the other languages
-    //      if (rg.test(navigator.language)) {
-    //          window.location="index.es.html";
-    //      }
-    </script>
-
       <title>##1000.1##</title>
 
       <meta http-equiv="content-type" content="text/html; charset=utf-8" />

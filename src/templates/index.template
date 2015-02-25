@@ -124,9 +124,7 @@
             <div class="row">
               <div class="4u">
                 <section>
-                  <span>
-                  <img class="circle-shadow" src="images/graphic_design.svg" lowsrc="images/graphic_design.png">
-                  </span>
+                  <span><img class="circle-shadow" src="images/graphic_design.svg"></span>
                   <header>
                     <h3 class="service-title">##1011##</h3>
                   </header>
@@ -135,7 +133,7 @@
               </div>
               <div class="4u">
                 <section>
-                  <span><img class="circle-shadow" src="images/graphic_testing.svg" lowsrc="images/graphic_testing.png"></span>
+                  <span><img class="circle-shadow" src="images/graphic_testing.svg"></span>
                   <header>
                     <h3 class="service-title">##1013##</h3>
                   </header>
@@ -144,7 +142,7 @@
               </div>
               <div class="4u">
                 <section>
-                  <span><img class="circle-shadow" src="images/graphic_training.svg" lowsrc="images/graphic_training.png"></span>
+                  <span><img class="circle-shadow" src="images/graphic_training.svg"></span>
                   <header>
                     <h3 class="service-title">##1015##</h3>
                   </header>

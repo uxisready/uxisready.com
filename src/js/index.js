@@ -68,7 +68,7 @@
     $( window ).on( "resize", function() {
       $( ".carousel-inner > DIV" ).equalHeights();
       $( ".quotes" ).equalHeights();
-    } ).resize();
+    });
 
     $( ".fit-text" ).fitText( 0.8, {
       minFontSize: "20px",
@@ -106,6 +106,7 @@
 
   $( "HTML" ).hide();
   $( initialize );
+  $( window ).trigger('resize');
 
 })(jQuery);
 
@@ -124,3 +125,4 @@
 ga( "create", "UA-49766755-1", "uxisready.com" );
 ga( "send", "pageview" );
 <!-- ======================================================================= -->
+

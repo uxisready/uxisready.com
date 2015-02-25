@@ -33,7 +33,7 @@
 
   $.fn.equalHeights = function( pad ) {
 
-    var maxHeight = 300;
+    var maxHeight = 100;
     $( this )
       .height( "auto" )
       .each( function() {

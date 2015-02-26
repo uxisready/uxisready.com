@@ -88,7 +88,7 @@
           files: [
             { expand: true,  cwd: "src/tmp/concat",  src: "<%= pkg.name %>.js",  dest: "www/" },
             { expand: true,  cwd: "src/tmp/",  src: ["*.html","css/**"],  dest: "www/" },
-            { expand: true,  cwd: "src/",      src: ["fonts/**", "images/**", "css/**" ],  dest: "www/" }
+            { expand: true,  cwd: "src/",      src: ["fonts/**", "images/**", "css/**", "*.ico" ],  dest: "www/" }
           ]
         }
       },

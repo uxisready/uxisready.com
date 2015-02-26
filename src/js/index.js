@@ -63,11 +63,6 @@
 
     $( "HTML" ).show();
 
-    //$( window ).on( "resize", function() {
-    //  $( ".carousel-inner > DIV" ).equalHeights();
-    //  $( ".quotes" ).equalHeights();
-    //});
-
     $( ".fit-text" ).fitText( 0.8, {
       minFontSize: "20px",
       maxFontSize: "40px"
@@ -98,7 +93,6 @@
 
   $( "HTML" ).hide();
   $( initialize );
-  //$( window ).trigger('resize');
 
 })(jQuery);
 

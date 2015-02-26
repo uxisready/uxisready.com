@@ -14,7 +14,9 @@
           src: [ "build.js" ]
         }
       },
+
       banner: "/* Author: uxisready.com , <%= grunt.template.today(\"yyyy\") %> */\n",
+
       stylus: {
         compile: {
           options: {
@@ -122,6 +124,14 @@
         }
       },
 
+      svg2png: {
+        all: {
+          files: [
+            { cwd: "src/images/", src: ["**/*.svg"], dest: "src/images/png/" }
+          ]
+        }
+      },
+
       clean: {
         cleantmp: ["src/tmp/"],
         cleanwww: ["www/"]
@@ -146,14 +156,15 @@
     grunt.loadNpmTasks( "grunt-contrib-uglify" );
     grunt.loadNpmTasks( "grunt-contrib-cssmin" );
     grunt.loadNpmTasks( "grunt-contrib-clean" );
+    grunt.loadNpmTasks( "grunt-svg2png" );
 
     // Default task(s).
-    grunt.registerTask( "full"     , [ "clean", "stylus", "execute", "jsbeautifier", "eslint", "jscs" , "minimize" , "copy"] );
+    grunt.registerTask( "full"     , [ "clean", "generate", "lint" , "minimize" , "copy"] );
 
     grunt.registerTask( "default"  , [ "tidy", "generate", "lint" , "minimize" , "copy"] );
 
     grunt.registerTask( "tidy"     , [ "clean" ] );
-    grunt.registerTask( "generate" , [ "stylus", "execute" ] );
+    grunt.registerTask( "generate" , [ "stylus", "svg2png", "execute" ] );
 
     grunt.registerTask( "lint"     , [ "jsbeautifier", "eslint", "jscs" ] );
 

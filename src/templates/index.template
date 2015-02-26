@@ -118,7 +118,7 @@
               <div class="4u">
                 <section>
                   <span>
-                  <img class="circle-shadow" src="images/graphic_design._svg" onerror="this.src='/images/png/graphic_design.png';this.onerror=null;">
+                  <img class="circle-shadow" src="images/graphic_design.svg" onerror="this.src='/images/png/graphic_design.png';this.onerror=null;">
                   </span>
                   <header>
                     <h3 class="service-title">##1011##</h3>
@@ -128,7 +128,7 @@
               </div>
               <div class="4u">
                 <section>
-                  <span><img class="circle-shadow" src="images/graphic_testing._svg" onerror="this.src='/images/png/graphic_testing.png';this.onerror=null;"></span>
+                  <span><img class="circle-shadow" src="images/graphic_testing.svg" onerror="this.src='/images/png/graphic_testing.png';this.onerror=null;"></span>
                   <header>
                     <h3 class="service-title">##1013##</h3>
                   </header>
@@ -137,7 +137,7 @@
               </div>
               <div class="4u">
                 <section>
-                  <span><img class="circle-shadow" src="images/graphic_training._svg" onerror="this.src='/images/png/graphic_training.png';this.onerror=null;"></span>
+                  <span><img class="circle-shadow" src="images/graphic_training.svg" onerror="this.src='/images/png/graphic_training.png';this.onerror=null;"></span>
                   <header>
                     <h3 class="service-title">##1015##</h3>
                   </header>
@@ -176,7 +176,7 @@
             <h2 class="section-title">##1017##</h2>
 
           <div class="diagram-container show-narrow">
-            <img id="process-diagram" class="process-diagram circle-shadow" src="images/process._svg" onerror="this.src='/images/png/process.png';this.onerror=null;">
+            <img id="process-diagram" class="process-diagram circle-shadow" src="images/process.svg" onerror="this.src='/images/png/process.png';this.onerror=null;">
           </div>
 
             <div id="DIV">
@@ -234,7 +234,7 @@
             </div>
 
             <div class="5u diagram-container hide-narrow">
-                <img id="process-diagram" class="process-diagram circle-shadow" src="images/process._svg" onerror="this.src='/images/png/process.png';this.onerror=null;">
+                <img id="process-diagram" class="process-diagram circle-shadow" src="images/process.svg" onerror="this.src='/images/png/process.png';this.onerror=null;">
             </div>
 
           </div>
@@ -325,7 +325,7 @@
       <div class="row">
 
         <div class="5u">
-          <img class="uxisready" src="images/logo_uxisready._svg" onerror="this.src='/images/png/logo_uxisready.png';this.onerror=null;">
+          <img class="uxisready" src="images/logo_uxisready.svg" onerror="this.src='/images/png/logo_uxisready.png';this.onerror=null;">
         </div>
 
         <div class="7u">
